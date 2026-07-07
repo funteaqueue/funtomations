@@ -1,0 +1,86 @@
+<div class="balatro-casino roulette-game crt">
+    <div class="casino-header">
+        <h2 class="neon-text animate-pulse">
+            {{#if isViewer}}
+            SPECTATING {{activeUsername}}'S GAME
+            {{else}}
+            ROULETTE
+            {{/if}}
+        </h2>
+        <div class="stakes-display">
+            <span class="label">STAKES:</span>
+            <span class="value chips-neon" id="total-stakes-label">{{stakes}} DMG</span>
+        </div>
+        <div class="timer-display" style="text-align: center; margin-top: -10px; margin-bottom: 10px; font-family: 'Courier New', monospace; font-size: 0.9rem; font-weight: bold;">
+            TIME REMAINING: <span id="game-timer" style="color: #ffcc00; text-shadow: 0 0 5px #ffcc00; font-size: 1.1rem; font-weight: 900;">30s</span>
+        </div>
+    </div>
+
+    <div class="game-body">
+        <!-- Real Rotating Roulette Wheel -->
+        <div class="wheel-outer">
+            <div class="roulette-wheel" id="casino-wheel">
+                <div class="wheel-inner">
+                    {{#each pockets}}
+                    <div class="wheel-pocket {{this.color}}" style="transform: rotate({{this.angle}}deg) translateY(-155px) rotate({{this.negAngle}}deg);">
+                        <span class="pocket-num">{{this.number}}</span>
+                    </div>
+                    {{/each}}
+                </div>
+                <div class="wheel-ball-container" id="casino-ball-container">
+                    <div class="wheel-ball" id="casino-ball"></div>
+                </div>
+                <div class="wheel-center">SPIN</div>
+            </div>
+        </div>
+
+        <div class="betting-board">
+            <div class="pool-status">
+                <span>Unallocated Damage:</span>
+                <span class="value pool-remaining" id="unallocated-damage">{{stakes}}</span>
+            </div>
+
+            <!-- Quick Bets -->
+            <div class="quick-bets-container" style="display: flex; gap: 8px; margin-bottom: 12px; width: 100%;">
+                <button type="button" class="btn-casino btn-quick-bet btn-quick-red" data-color="red" style="flex: 1; background: #ff2a5f; color: #fff; font-size: 0.8rem; font-weight: bold; border-radius: 4px; padding: 6px; border: 1.5px solid #ff0055; box-shadow: 0 0 5px rgba(255, 42, 95, 0.4); cursor: pointer;" {{#if isViewer}}disabled{{/if}}>ALL ON RED</button>
+                <button type="button" class="btn-casino btn-quick-bet btn-quick-black" data-color="black" style="flex: 1; background: #1a1a1a; color: #fff; font-size: 0.8rem; font-weight: bold; border-radius: 4px; padding: 6px; border: 1.5px solid #333; box-shadow: 0 0 5px rgba(255, 255, 255, 0.15); cursor: pointer;" {{#if isViewer}}disabled{{/if}}>ALL ON BLACK</button>
+                <button type="button" class="btn-casino btn-quick-bet btn-clear-bets" style="flex: 1; background: #3c1e54; color: #fff; font-size: 0.8rem; font-weight: bold; border-radius: 4px; padding: 6px; border: 1.5px solid #ff00a0; box-shadow: 0 0 5px rgba(255, 0, 160, 0.4); cursor: pointer;" {{#if isViewer}}disabled{{/if}}>CLEAR ALL</button>
+            </div>
+
+            <!-- Betting Grid -->
+            <div class="bet-grid">
+                <!-- Color Bets -->
+                <div class="bet-cell bet-red" data-bet="red">
+                    <div class="bet-label">RED (x2)</div>
+                    <input type="number" class="bet-input" name="bet-red" value="0" min="0" max="{{stakes}}" {{#if isViewer}}disabled{{/if}}/>
+                </div>
+                <div class="bet-cell bet-black" data-bet="black">
+                    <div class="bet-label">BLACK (x2)</div>
+                    <input type="number" class="bet-input" name="bet-black" value="0" min="0" max="{{stakes}}" {{#if isViewer}}disabled{{/if}}/>
+                </div>
+                <div class="bet-cell bet-green" data-bet="green">
+                    <div class="bet-label">GREEN (x14)</div>
+                    <input type="number" class="bet-input" name="bet-green" value="0" min="0" max="{{stakes}}" {{#if isViewer}}disabled{{/if}}/>
+                </div>
+ 
+                <!-- Number Bet -->
+                <div class="bet-cell bet-number-container">
+                    <div class="bet-label">NUMBER (0-36) (x35)</div>
+                    <div class="number-bet-inputs">
+                        <select name="bet-number-val" class="number-select" {{#if isViewer}}disabled{{/if}}>
+                            <option value="">None</option>
+                            {{#each numbers}}
+                            <option value="{{this}}">{{this}}</option>
+                            {{/each}}
+                        </select>
+                        <input type="number" class="bet-input" name="bet-number-amt" value="0" min="0" max="{{stakes}}" {{#if isViewer}}disabled{{/if}}/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="casino-footer">
+        <button type="button" class="btn-spin neon-btn disabled" id="btn-play-roulette" disabled>PLACE ALL BETS</button>
+    </div>
+</div>

@@ -1,0 +1,398 @@
+/* ---------------------------------------------- */
+/*  Manage Automations window                     */
+/* ---------------------------------------------- */
+
+.fantik-automation-manager {
+    --fam-green: #2ea36b;
+    --fam-red: #c94f4f;
+    --fam-surface: rgba(255, 255, 255, 0.05);
+    --fam-surface-hover: rgba(255, 255, 255, 0.12);
+    --fam-border: rgba(128, 128, 128, 0.35);
+}
+
+.fantik-automation-manager .fam-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+}
+
+/* ---------------------------------------------- */
+/*  List view                                     */
+/* ---------------------------------------------- */
+
+.fantik-automation-manager .fam-search {
+    position: relative;
+}
+
+.fantik-automation-manager .fam-search i {
+    position: absolute;
+    left: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8125rem;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.fantik-automation-manager .fam-search input {
+    width: 100%;
+    height: 2rem;
+    padding-left: 2rem;
+    border-radius: 1rem;
+    border: 1px solid var(--fam-border);
+    background: var(--fam-surface);
+}
+
+.fantik-automation-manager .fam-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+    margin: 0;
+    padding: 0;
+    max-height: 55vh;
+    overflow-y: auto;
+}
+
+.fantik-automation-manager .fam-row {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.5rem 0.625rem;
+    border: 1px solid var(--fam-border);
+    border-radius: 0.375rem;
+    background: var(--fam-surface);
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, transform 0.1s;
+}
+
+.fantik-automation-manager .fam-row:hover {
+    background: var(--fam-surface-hover);
+    border-color: rgba(160, 160, 160, 0.6);
+}
+
+.fantik-automation-manager .fam-row-active {
+    background: color-mix(in srgb, var(--fam-green) 18%, transparent);
+    border-color: color-mix(in srgb, var(--fam-green) 55%, transparent);
+}
+
+.fantik-automation-manager .fam-row-active:hover {
+    background: color-mix(in srgb, var(--fam-green) 28%, transparent);
+    border-color: var(--fam-green);
+}
+
+.fantik-automation-manager .fam-row-icon {
+    flex: 0 0 1rem;
+    text-align: center;
+    opacity: 0.35;
+}
+
+.fantik-automation-manager .fam-row-active .fam-row-icon {
+    color: var(--fam-green);
+    opacity: 1;
+}
+
+.fantik-automation-manager .fam-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1875rem;
+    min-width: 0;
+}
+
+.fantik-automation-manager .fam-name {
+    font-weight: bold;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fantik-automation-manager .fam-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.fantik-automation-manager .fam-tags:empty {
+    display: none;
+}
+
+.fantik-automation-manager .fam-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.6875rem;
+    line-height: 1.4;
+    padding: 0 0.4375rem;
+    border: 1px solid var(--fam-border);
+    border-radius: 0.625rem;
+    opacity: 0.85;
+    white-space: nowrap;
+}
+
+.fantik-automation-manager .fam-tag-off {
+    color: var(--fam-red);
+    border-color: currentColor;
+}
+
+.fantik-automation-manager .fam-tag-gm {
+    color: #d4a72c;
+    border-color: currentColor;
+}
+
+.fantik-automation-manager .fam-locked-notice {
+    margin: 0;
+    padding: 0.5rem 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+    font-style: italic;
+    border: 1px dashed var(--fam-border);
+    border-radius: 0.375rem;
+    opacity: 0.8;
+}
+
+.fantik-automation-manager .fam-row-chevron {
+    flex: 0 0 auto;
+    font-size: 0.75rem;
+    opacity: 0.4;
+    transition: opacity 0.15s, transform 0.15s;
+}
+
+.fantik-automation-manager .fam-row:hover .fam-row-chevron {
+    opacity: 0.9;
+    transform: translateX(2px);
+}
+
+.fantik-automation-manager .fam-empty {
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+/* ---------------------------------------------- */
+/*  Detail view                                   */
+/* ---------------------------------------------- */
+
+.fantik-automation-manager .fam-detail-header {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.fantik-automation-manager .fam-back {
+    flex: 0 0 1.875rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--fam-border);
+    border-radius: 50%;
+    background: var(--fam-surface);
+    cursor: pointer;
+}
+
+.fantik-automation-manager .fam-back:hover {
+    background: var(--fam-surface-hover);
+}
+
+.fantik-automation-manager .fam-detail-name {
+    flex: 1;
+    margin: 0;
+    border: none;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fantik-automation-manager .fam-status {
+    flex: 0 0 auto;
+    font-size: 0.6875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--fam-border);
+    opacity: 0.75;
+}
+
+.fantik-automation-manager .fam-status-on {
+    color: #fff;
+    background: var(--fam-green);
+    border-color: var(--fam-green);
+    opacity: 1;
+}
+
+.fantik-automation-manager .fam-desc {
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    opacity: 0.85;
+}
+
+.fantik-automation-manager .fam-detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.fantik-automation-manager .fam-detail-tags:empty {
+    display: none;
+}
+
+.fantik-automation-manager .fam-big-toggle {
+    width: 100%;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: filter 0.15s;
+}
+
+.fantik-automation-manager .fam-big-toggle:hover {
+    filter: brightness(1.15);
+}
+
+.fantik-automation-manager .fam-big-toggle-apply {
+    color: #fff;
+    background: var(--fam-green);
+    border: 1px solid var(--fam-green);
+}
+
+.fantik-automation-manager .fam-big-toggle-remove {
+    color: var(--fam-red);
+    background: color-mix(in srgb, var(--fam-red) 12%, transparent);
+    border: 1px solid var(--fam-red);
+}
+
+.fantik-automation-manager .fam-settings {
+    margin: 0;
+    padding: 0.5rem 0.75rem 0.75rem;
+    border: 1px solid var(--fam-border);
+    border-radius: 0.375rem;
+}
+
+.fantik-automation-manager .fam-settings legend {
+    padding: 0 0.375rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    opacity: 0.75;
+}
+
+.fantik-automation-manager .fam-settings .form-group {
+    margin: 0.375rem 0;
+}
+
+.fantik-automation-manager .fam-settings .hint {
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.fantik-automation-manager .fam-no-settings {
+    margin: 0.25rem 0;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.65;
+}
+
+/* ---------------------------------------------- */
+/*  Target picker: floating HUD                   */
+/* ---------------------------------------------- */
+
+.fantik-target-hud {
+    position: fixed;
+    left: 50%;
+    top: 15vh;
+    transform: translateX(-50%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.375rem;
+    animation: fantik-target-hud-in 0.15s ease-out;
+    pointer-events: none;
+}
+
+.fantik-target-hud > * {
+    pointer-events: auto;
+}
+
+.fantik-target-hud .fantik-target-count {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: #f0f0e0;
+    background: rgba(24, 24, 27, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    backdrop-filter: blur(4px);
+}
+
+button.fantik-target-skip {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #f0f0e0;
+    background: rgba(24, 24, 27, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 1.5rem;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+
+button.fantik-target-skip:hover {
+    color: #fff;
+    background: rgba(48, 48, 54, 0.95);
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0.625rem rgba(255, 255, 255, 0.35);
+}
+
+button.fantik-target-skip i {
+    opacity: 0.85;
+}
+
+@keyframes fantik-target-hud-in {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(0.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* ---------------------------------------------- */
+/*  "Manage <item>" context menu entry            */
+/* ---------------------------------------------- */
+
+/* Same green as --fam-green: marks items with an active automation. */
+li.context-item.fantik-automations-manage-item {
+    color: #2ea36b;
+    font-weight: bold;
+}

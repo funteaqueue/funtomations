@@ -1,0 +1,1996 @@
+{
+  "spellCount": 108,
+  "batchCount": 11,
+  "batches": [
+    [
+      {
+        "name": "Acid Burn",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "SCGtD",
+            "duration": "Instantaneous",
+            "text": "You magically produce a spray of acidic formula in a 15-foot cone in front of you. All creatures in the cone must succeed on a Dexterity saving throw or take 1d6 acid damage.\r\n\r\nThis spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Acid Splash",
+        "level": "Cantrip",
+        "school": "Conjuration",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Instantaneous",
+            "text": "You hurl a bubble of acid. Choose one creature you can see within range, or choose two creatures you can see within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.\r\n\r\nThis spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "You create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+          }
+        ]
+      },
+      {
+        "name": "Aundair's Silent Sanctum",
+        "level": "Cantrip",
+        "school": "Illusion",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "S",
+        "versions": [
+          {
+            "source": "ExE'24",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You surround yourself with an invisible bubble of energy in a 5-foot Emanation. The sphere muffles sound in both directions. Creatures outside of the Emanation have Disadvantage on Wisdom (Perception) checks made to hear any sounds from within the Emanation, and creatures inside the Emanation have Disadvantage on Wisdom (Perception) checks made to hear sounds outside of the Emanation.\r\n\r\nIn addition, creatures have Advantage on saving throws against effects that require them to hear a sound from the other side of the Emanation, such as the Command spell.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Bacterial Barrage",
+        "level": "Cantrip",
+        "school": "Necromancy",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "SCGtD",
+            "duration": "Instantaneous",
+            "text": "You attack a creature in range with a quick spreading infection that takes advantage of existing conditions. Make a ranged spell attack against a target, on a hit the infection does 1d8 necrotic damage to the target. If the target is suffering from the poisoned condition or a disease, it instead takes 1d12 necrotic damage.\r\n\r\nThe spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Blade Ward",
+        "level": "Cantrip",
+        "school": "Abjuration",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "1 round",
+            "text": "You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Concentration, up to 1 minute",
+            "text": "Whenever a creature makes an attack roll against you before the spell ends, the attacker subtracts 1d4 from the attack roll.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Blood Bolt",
+        "level": "Cantrip",
+        "school": "Necromancy",
+        "castingTime": "Action",
+        "range": "90 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "TCM'14",
+            "duration": "Instantaneous",
+            "text": "You hurl a twisting bolt of blood at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d6 necrotic damage, and you gain a number of temporary hit points equal to your proficiency bonus.\r\n\r\nThe spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+          },
+          {
+            "source": "TCM'24",
+            "duration": "Instantaneous",
+            "text": "You hurl a twisting bolt of blood at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d6 Necrotic damage, and you gain a number of Temporary Hit Points equal to your Proficiency Bonus.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+          }
+        ]
+      },
+      {
+        "name": "Booming Blade",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "S, M (a melee weapon worth at least 1 sp)",
+        "versions": [
+          {
+            "source": "TCE",
+            "duration": "1 round",
+            "text": "You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes 1d8 thunder damage, and the spell ends.\r\n\r\nThis spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 thunder damage to the target on a hit, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Bright Sparks",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "V, M (flint and steel)",
+        "versions": [
+          {
+            "source": "BoET",
+            "duration": "1 round",
+            "text": "Sparks fly from your fingers for a moment, generating bright blue light. This illuminates the region around you to a distance of 60 feet until the start of your next turn. Wisdom (Perception) checks have advantage to spot creatures hidden in shadows.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Calling Card",
+        "level": "Cantrip",
+        "school": "Illusion",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "S, M (a stamp carved like the mark left by your calling card)",
+        "versions": [
+          {
+            "source": "GH:PG'14",
+            "duration": "Until dispelled",
+            "text": "You touch a corpse and mark it with a magical mark.\r\n\r\nYou can choose to make it a visible mark that appears as a rune or word written on the flesh, or you can choose to make it an invisible mark. Creatures who specifically examine a corpse for a calling card automatically detect one, whether visible or invisible.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "GH:PG'24",
+            "duration": "Until dispelled",
+            "text": "You touch a corpse and leave a magical mark. You can choose to make it a visible mark that appears as a rune or word written on the flesh, or you can choose to make the mark Invisible. A creature that takes the Study action to specifically examine a corpse automatically detects it, whether visible or Invisible.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Can't Trip",
+        "level": "Cantrip",
+        "school": "Abjuration",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "1 round",
+            "text": "Choose a willing creature within range that you can see Until the end of your next turn, that creature is immune to the prone condition If it is already prone and is not restrained, this spell sets it on its feet\r\n\r\nThe number of creatures you can simultaneously target with this spell increases by 1 when you reach 5th level (2 creatures), 11th level (3 creatures), and 17th level (4 creatures).",
+            "atHigherLevels": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Can'trip",
+        "level": "Cantrip",
+        "school": "Abjuration",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "1 round",
+            "text": "You temporarily tangle the Weave around a creature within range that you can see Until the start of your next turn, each time the creature tries to cast a cantrip whilst this spell affects it, it must succeed on a spellcasting ability check against your spell save DC waste its action (but not its spell slot). The spell ends if the target moves out of the spell's range\r\n\r\nThe maximum level of spell inhibited by this cantrip increases when you reach 5th level (1st-level spells), 11th level (2nd-level spells), and 17th level (3rd-level spells).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Cat's Spring",
+        "level": "Cantrip",
+        "school": "Conjuration",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "CBT",
+            "duration": "Instantaneous",
+            "text": "You jump up to 10 feet to an unoccupied space you can see and deliver a spectral claw attack that deals Slashing or Force damage (you choose when you cast the spell). Make a melee spell attack against a target. On a hit, the target takes 1d8 damage of the chosen type, and the next attack roll you make against it before the end of your next turn has Advantage.",
+            "atHigherLevels": "Using a Higher-Level Spell Slot. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (38), and 17 (4d8)."
+          }
+        ]
+      },
+      {
+        "name": "Chant of Thoth",
+        "level": "Cantrip",
+        "school": "Divination",
+        "castingTime": "1 Min.",
+        "range": "Self",
+        "components": "V",
+        "versions": [
+          {
+            "source": "CBT",
+            "duration": "8 hours",
+            "text": "The first time you fail an Intelligence check during the spell's duration, you may automatically succeed on the check if the DC is less than your spell save DC. Otherwise, you gain a +2 bonus to that check. Once you use this benefit, you cannot use it again until you finish a Short Rest.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Chill Touch",
+        "level": "Cantrip",
+        "school": "Necromancy",
+        "castingTime": "Action",
+        "range": "120 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "1 round",
+            "text": "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.\r\n\r\nIf you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.\r\n\r\nThis spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can't regain Hit Points until the end of your next turn.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10)."
+          }
+        ]
+      },
+      {
+        "name": "Claws of Darkness",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "TftS",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You shape shadows into claws that grow from your fingers and drip inky blackness. The claws have a reach of 10 feet. While the spell lasts, you can make a melee spell attack with them that deals 1d10 cold damage.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Concealed Shot",
+        "level": "Cantrip",
+        "school": "Illusion",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "S, M (a Ranged weapon)",
+        "versions": [
+          {
+            "source": "GC:VSS'24",
+            "duration": "1 minute",
+            "text": "A Ranged weapon you touch is made supernaturally subtle. For the duration, when you make a ranged attack using the weapon, the weapon or ammunition you're using becomes invisible while in flight and the weapon becomes silent. If the weapon produces smoke or light, the spell suppresses these effects. The weapon or projectile you're using becomes visible again after the attack hits or misses. If you are hidden and the target is 80 feet or further from you, the attack doesn't reveal your location.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Concussion",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "Instantaneous",
+            "text": "With a thdoom that can be heard 100 feet away, you cause a sudden increase in the air pressure surrounding a creature you can see within range The target must succeed on a Constitution saving throw or take 1d8 thunder damage and become deafened until the start of your next turn\r\n\r\nThis spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Confounding Shadows",
+        "level": "Cantrip",
+        "school": "Conjuration",
+        "castingTime": "Action",
+        "range": "120 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "CBT",
+            "duration": "1 round",
+            "text": "You create an orb of writhing shadows and hurl it at a creature within range. The target must succeed on a Wisdom saving throw or take 1d6 Psychic damage and it is unable to see you until the end of your next turn.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+          }
+        ]
+      },
+      {
+        "name": "Control Flames",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "S",
+        "versions": [
+          {
+            "source": "XGE",
+            "duration": "Instantaneous or 1 hour (see below)",
+            "text": "You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:\r\n\r\nYou instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.You instantaneously extinguish the flames within the cube.You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.You cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour.If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Create Bonfire",
+        "level": "Cantrip",
+        "school": "Conjuration",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "XGE",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it moves into the bonfire's space for the first time on a turn or ends its turn there.\r\n\r\nThe bonfire ignites flammable objects in its area that aren't being worn or carried.\r\n\r\nThe spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "atHigherLevels": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Dancing Lights",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "120 feet",
+        "components": "V, S, M (a bit of phosphorus or wychwood, or a glowworm)",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.\r\n\r\nAs a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You create up to four torch-size lights within range, making them appear as torches, lanterns, or glowing orbs that hover for the duration. Alternatively, you combine the four lights into one glowing Medium form that is vaguely humanlike. Whichever form you choose, each light sheds Dim Light in a 10-foot radius.\r\n\r\nAs a Bonus Action, you can move the lights up to 60 feet to a space within range. A light must be within 20 feet of another light created by this spell, and a light vanishes if it exceeds the spell's range.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Dissolution",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "TCM'14",
+            "duration": "Instantaneous",
+            "text": "You touch a creature or nonmagical object and break the target's substance down into its most fundamental components. Make a melee spell attack. On a hit, the target takes 1d8 force damage, and its AC is reduced by 1 against the next attack roll made against it before the end of your next turn.\r\n\r\nThe spell's damage increases by 1d8 when you reach 5th-level (2d8), 11th-level (3d8), and 17th-level (4d8).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "TCM'24",
+            "duration": "Instantaneous",
+            "text": "You touch a creature or nonmagical object and break the target's substance down into its most fundamental components. Make a melee spell attack. On a hit, the target takes 1d8 Force damage, and its AC is reduced by 1 against the next attack roll made against it before the end of your next turn.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+          }
+        ]
+      },
+      {
+        "name": "Douse Light",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "BoET",
+            "duration": "Instantaneous",
+            "text": "With a simple gesture, you can put out a single small source of light within range. This spell extinguishes a torch, a candle, a lantern, or a light or dancing lights cantrip.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Drayfn's Bane of Excellence",
+        "level": "Cantrip",
+        "school": "Necromancy",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "BoET",
+            "duration": "Concentration, up to 1 minute",
+            "text": "A creature of your choice within range must make a Charisma saving throw. On a failed save, the next ability check, attack roll, or saving throw the target makes, within the duration, that results in a roll of 20 on a d20, fails to have any effect. The number of times this cantrip can turn a natural 20 into a failure increases by one when you reach 5th level (two natural 20s), 11th level (three natural 20s), and 17th level (four natural 20s).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Drizzle",
+        "level": "Cantrip",
+        "school": "Conjuration",
+        "castingTime": "Action",
+        "range": "20 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "BoET",
+            "duration": "Concentration",
+            "text": "You conjure up a very light rain, enough to dampen the ground in a 20-foot square but not enough to drink or to put out a fire of any size larger than a candle or match. If sustained for 1 minute, the ground is wet to the touch, and if sustained for 10 minutes, the affected area is slightly muddy or slippery, though not enough to impede movement. In freezing weather, this may generate a coating of thin ice.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Druidcraft",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Instantaneous",
+            "text": "Whispering to the spirits of nature, you create one of the following effects within range:\r\n\r\nYou create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.You instantly light or snuff out a candle, a torch, or a small campfire.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "Whispering to the spirits of nature, you create one of the following effects within range.\r\n\r\nWeather Sensor. You create a Tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.\r\n\r\nBloom. You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.\r\n\r\nSensory Effect. You create a harmless sensory effect, such as falling leaves, spectral dancing fairies, a gentle breeze, the sound of an animal, or the faint odor of skunk. The effect must fit in a 5-foot Cube.\r\n\r\nFire Play. You light or snuff out a candle, a torch, or a campfire.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Eldritch Blast",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "120 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Instantaneous",
+            "text": "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.\r\n\r\nThe spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "You hurl a beam of crackling energy. Make a ranged spell attack against one creature or object in range. On a hit, the target takes 1d10 Force damage.",
+            "atHigherLevels": "Cantrip Upgrade. The spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."
+          }
+        ]
+      },
+      {
+        "name": "Elementalism",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "You exert control over the elements, creating one of the following effects within range.\r\n\r\nBeckon Air. You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and close open doors and shutters, all in a 5-foot Cube. Doors and shutters being held open by someone or something aren't affected.\r\n\r\nBeckon Earth. You create a thin shroud of dust or sand that covers surfaces in a 5-foot-square area, or you cause a single word to appear in your handwriting in a patch of dirt or sand.\r\n\r\nBeckon Fire. You create a thin cloud of harmless embers and colored, scented smoke in a 5-foot Cube. You choose the color and scent, and the embers can light candles, torches, or lamps in that area. The smoke's scent lingers for 1 minute.\r\n\r\nBeckon Water. You create a spray of cool mist that lightly dampens creatures and objects in a 5-foot Cube. Alternatively, you create 1 cup of clean water either in an open container or on a surface, and the water evaporates in 1 minute.\r\n\r\nSculpt Element. You cause dirt, sand, fire, smoke, mist, or water that can fit in a 1-foot Cube to assume a crude shape (such as that of a creature) for 1 hour.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Encode Thoughts",
+        "level": "Cantrip",
+        "school": "Enchantment",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "S",
+        "versions": [
+          {
+            "source": "GGR",
+            "duration": "8 hours",
+            "text": "Putting a finger to your head, you pull a memory, an idea, or a message from your mind and transform it into a tangible string of glowing energy called a thought strand, which persists for the duration or until you cast this spell again. The thought strand appears in an unoccupied space within 5 feet of you as a Tiny, weightless, semisolid object that can be held and carried like a ribbon. It is otherwise stationary.\r\n\r\nIf you cast this spell while concentrating on a spell or an ability that allows you to read or manipulate the thoughts of others (such as detect thoughts or modify memory), you can transform the thoughts or memories you read, rather than your own, into a thought strand.\r\n\r\nCasting this spell while holding a thought strand allows you to instantly receive whatever memory, idea, or message the thought strand contains. (Casting detect thoughts on the strand has the same effect.)",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Evil Eye",
+        "level": "Cantrip",
+        "school": "Enchantment",
+        "castingTime": "Action",
+        "range": "120 feet",
+        "components": "S",
+        "versions": [
+          {
+            "source": "CBT",
+            "duration": "1 round",
+            "text": "You glare at a creature that you can see within range, imposing a baleful hex on it. The target takes 1d4 + 2 Psychic damage, and attack rolls and Unarmed Strikes against it can score a Critical Hit on a roll of 19 or 20 on the d20.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d4 + 2 when you reach levels 5 (2d4 + 4), 11 (3d4 + 6), and 17 (4d4 + 8)."
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Eye Burn",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Reaction",
+        "range": "30 feet",
+        "components": "V, S, M (a smear of camphor)",
+        "versions": [
+          {
+            "source": "TCM'14",
+            "duration": "1 round",
+            "text": "You sting the eyes of a creature attacking you. The target must make a Constitution saving throw (a creature with blindsight or immunity to the blinded condition succeeds automatically). On a failed save, the target is blinded until the end of the turn. On a successful save, it must subtract 1d4 from the triggering attack roll. The target automatically succeeds on its saves against your subsequent casting of this spell for 24 hours.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "TCM'24",
+            "duration": "1 round",
+            "text": "You sting the eyes of a creature attacking you. The target must make a Constitution saving throw (a creature with Blindsight or Immunity to the Blinded condition succeeds automatically). On a failed save, the target has the Blinded condition until the end of the turn. On a successful save, it must subtract 1d4 from the triggering attack roll. The target automatically succeeds on its saves against your subsequent casting of this spell for 24 hours.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Ferocious Strike",
+        "level": "Cantrip",
+        "school": "Biomancy",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "Instantaneous",
+            "text": "With a pulse of adrenaline, a tremendous ferocity comes upon you Make one weapon attack against a target within your reach or range If this attack hits, the target takes additional 1d4 damage of the weapon's damage type\r\n\r\nThis spell's damage increases by 1d4 when you reach 5th level (2d4) 11th level (3d4) and 17th level (4d4).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Finger Guns",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Bonus",
+        "range": "Self",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "GC:VSS'24",
+            "duration": "1 minute",
+            "text": "You extend your forefinger and thumb, a dangerous gesture mimicking a gun. For the duration, your hand counts as a Simple Ranged weapon with a range of 60/240 feet and the Slow mastery property. You can use your spellcasting ability instead of Dexterity for the attack rolls of this weapon. On a hit, the weapon deals 2d6 Force damage and doesn't add your ability modifier to damage.",
+            "atHigherLevels": "Cantrip Upgrade. The weapon's normal range increases by 30 feet and its long range increases by 120 feet when you reach levels 5 (90/360 feet), 11 (120/480 feet), and 17 (150/600 feet)."
+          },
+          {
+            "source": "VSS:PP",
+            "duration": "1 minute",
+            "text": "You extend your forefinger and thumb, a dangerous gesture mimicking a gun. For the duration, your hand counts as a Simple Ranged weapon with a range of 60/240 feet and the Slow mastery property. You can use your spellcasting ability instead of Dexterity for the attack rolls of this weapon. On a hit, the weapon deals 2d6 Force damage and doesn't add your ability modifier to damage.",
+            "atHigherLevels": "Cantrip Upgrade. The weapon's normal range increases by 30 feet and its long range increases by 120 feet when you reach levels 5 (90/360 feet), 11 (120/480 feet), and 17 (150/600 feet)."
+          }
+        ]
+      },
+      {
+        "name": "Fire Bolt",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "120 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Instantaneous",
+            "text": "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.\r\n\r\nThis spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn't being worn or carried.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10)."
+          }
+        ]
+      },
+      {
+        "name": "Flare",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S, M (a strip of magnesium)",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "Instantaneous",
+            "text": "You launch a pulse of radiant energy at a target within range Make a ranged spell attack against the target On a hit, the target takes 1d8 radiant damage On a critical hit, the target is covered in glittering mystical light, granting advantage on attack rolls against the target until the end of your next turn\r\n\r\nAlternatively, you can launch the pulse at a point in the air within range where it slowly falls towards the ground. Until the end of your next turn, the flare sheds bright light in a 20-foot radius and dim light for an additional 20 feet\r\n\r\nThis spell's damage increases by 1d8, and the radius of the bright and dim light increases by 10 feet, when you reach 5th level (2d8, 30 feet), 11th level (3d8, 40 feet), and 17th level (4d8, 50 feet).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Flowering",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "20 feet",
+        "components": "V",
+        "versions": [
+          {
+            "source": "BoET",
+            "duration": "Concentration",
+            "text": "You call forth fragrant flowers from an inanimate object. If the object is held by an unwilling creature, that creature can make a Dexterity saving throw to negate the effect. If sustained for 1 minute, the flowers give forth a pleasing scent and may attract bees, hummingbirds, or other pollinators.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Force Blast",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "180 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "ExE'24",
+            "duration": "Instantaneous",
+            "text": "You unleash a bolt of mystical power at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Force damage.",
+            "atHigherLevels": "Cantrip Upgrade. This damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+          }
+        ]
+      },
+      {
+        "name": "Friends",
+        "level": "Cantrip",
+        "school": "Enchantment",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "S, M (a small amount of makeup applied to the face as this spell is cast)",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Concentration, up to 1 minute",
+            "text": "For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You magically emanate a sense of friendship toward one creature you can see within range. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target succeeds automatically if it isn't a Humanoid, if you're fighting it, or if you have cast this spell on it within the past 24 hours.\r\n\r\nThe spell ends early if the target takes damage or if you make an attack roll, deal damage, or force anyone to make a saving throw. When the spell ends, the target knows it was Charmed by you.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Frightful Start",
+        "level": "Cantrip",
+        "school": "Illusion",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V, S, M (a dead spider)",
+        "versions": [
+          {
+            "source": "GH:PG'24",
+            "duration": "1 round",
+            "text": "You twist your visage to scare a creature that you can see within range. The creature must succeed on a Wisdom saving throw or have the Frightened condition until the start of your next turn.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Frostbite",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "XGE",
+            "duration": "Instantaneous",
+            "text": "You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.\r\n\r\nThe spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+            "atHigherLevels": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Gray Gaze",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Bonus",
+        "range": "20 feet",
+        "components": "V, S, M (a pebble with a hole in it)",
+        "versions": [
+          {
+            "source": "FoEQ",
+            "duration": "Instantaneous",
+            "text": "You turn your gaze on one creature you can see within range. If the target can see your eyes, their body stiffens and cracks as if it were turning to stone. The target must succeed on a Constitution saving throw or take Necrotic damage equal to your Proficiency Bonus and have Disadvantage on the next Dexterity saving throw it makes before the end of its next turn.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Green-Flame Blade",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "S, M (a melee weapon worth at least 1 sp)",
+        "versions": [
+          {
+            "source": "TCE",
+            "duration": "Instantaneous",
+            "text": "You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.\r\n\r\nThis spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level (2d8 and 2d8) and 17th level (3d8 and 3d8).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Guidance",
+        "level": "Cantrip",
+        "school": "Divination",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You touch a willing creature and choose a skill. Until the spell ends, the creature adds 1d4 to any ability check using the chosen skill.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Gust",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "XGE",
+            "duration": "Instantaneous",
+            "text": "You seize the air and compel it to create one of the following effects at a point you can see within range:\r\n\r\nOne Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters closed, or your clothing to ripple in a breeze.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Gust Barrier",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "S",
+        "versions": [
+          {
+            "source": "HWCS",
+            "duration": "1 round",
+            "text": "You spread your arms wide, allowing yourself to become enveloped by the air around you. Until the end of your next turn, any ranged attack against you is made with disadvantage.\r\n\r\nMelee attackers who successfully hit you must make a Constitution saving throw against your spell save DC. On a failure, the attacker is flung away from you up to 10 feet and is knocked prone.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Hellfire",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "120 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "IllR",
+            "duration": "Instantaneous",
+            "text": "You create an eruption of smoldering hellfire around a creature you can see within range. The target must succeed on a Charisma saving throw or take 1d4 fire damage plus 1d4 necrotic damage.",
+            "atHigherLevels": "At Higher Levels. Both of the spell's damage types increase by 1d4 when you reach 5th level (2d4 each), 11th level (3d4 each), and 17th level (4d4 each)."
+          }
+        ]
+      },
+      {
+        "name": "Holy Word",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "GH:PG'24",
+            "duration": "Instantaneous",
+            "text": "You whisper a divine word under your breath, careful not to speak loudly, for such celestial power isn't for the unworthy. Make a ranged spell attack against a target within range. On a hit, the target takes 1d8 Radiant damage. If the target is Fey, Fiend, or Undead, its Speed is reduced by 10 feet and it can't take Reactions until the end of its next turn.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+          },
+          {
+            "source": "GH:PP",
+            "duration": "Instantaneous",
+            "text": "You mutter a word of the divine under your breath, being careful not to speak it any louder, for such celestial power is not for the tainted and unworthy. Make a ranged spell attack against the target. On a hit, the target takes 1d8 radiant damage. If you hit an undead, fiend, or fey, then its speed is reduced by 10 feet and it cannot take reactions until the end of its next turn.",
+            "atHigherLevels": "At Higher Levels. This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+          }
+        ]
+      },
+      {
+        "name": "Howl",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "V",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "1 round",
+            "text": "You utter a bestial, magically-augmented howl that can be heard for 1000 feet The howl can manifest as any animal call you've heard, such as the screech of a hawk or trumpet of an elephant Choose one creature with whom you are familiar as the recipient: if it can hear your howl, it understands your meaning and can respond in a likewise manner\r\n\r\nCreatures other than your recipient that hear the howl and that are under the effects of the comprehend languages spell or similar magic, or that can understand beasts, can understand the howl's meaning Otherwise, the howl is unintelligible to creatures that can hear it",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Hunter Sense",
+        "level": "Cantrip",
+        "school": "Divination",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "GH:PG'14",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You touch one willing creature. While this spell is active, the target's senses are heightened. If the target rolls a 9 or below on the die when making a Wisdom (Perception) check, they instead act as if they rolled a 10.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "GHLoE",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You touch one willing creature. While this spell is active, the target's senses are heightened. If the target rolls a 9 or below on the die when making a Wisdom (Perception) check, they instead act as if they rolled a 10.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "GH:PG'24",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You touch a willing creature. For the duration, the target's senses are heightened. Whenever the target makes a Wisdom (Perception) check, it can treat a d20 roll of 9 or lower as a 10.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Illusory Instrument",
+        "level": "Cantrip",
+        "school": "Illusion",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "GH:PG'24",
+            "duration": "10 minutes",
+            "text": "You create an illusionary copy of a mundane musical instrument. The copy of the instrument takes on the shape of your fondest memory of the instrument, such as the first flute you owned or the half harp gifted to you by a loved one. This illusion moves as its physical counterpart would, but it is weightless and is tangible only to you. This instrument can be used as a Spellcasting Focus. This illusory instrument dissipates if you move 10 feet away from it orchoose to end the spell (no action required by you).\r\n\r\nAs a Bonus Action, you can command your instrument to create one of the following effects:\r\n\r\nMimic basic sounds heard on a daily basis, such as a bird chirping, footsteps, or a slamming door.Automatically play a basic beat at the tempo of your choice.Record anything played on it, and play it back on a loop.Record and playback any noise that it could pick up within 15 feet, such as conversation, a royal decree, or a snoring party member who swears that they don't snore.",
+            "atHigherLevels": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Infestation",
+        "level": "Cantrip",
+        "school": "Conjuration",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V, S, M (a living flea)",
+        "versions": [
+          {
+            "source": "XGE",
+            "duration": "Instantaneous",
+            "text": "You cause a cloud of mites, fleas, and other parasites to appear momentarily on one creature you can see within range. The target must succeed on a Constitution saving throw, or it takes 1d6 poison damage and moves 5 feet in a random direction if it can move and its speed is at least 5 feet. Roll a d4 for the direction: 1, north; 2, south; 3, east; or 4, west. This movement doesn't provoke opportunity attacks, and if the direction rolled is blocked, the target doesn't move.\r\n\r\nThe spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Jolt",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "O:TTG",
+            "duration": "Instantaneous",
+            "text": "A jolt of electricity springs from your hand towards a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 lightning damage.\r\n\r\nAlternatively, you can target a machine within range and temporarily turn it on, allowing it to function as if it were whelmed by a spirit or permanently enchanted. Machines targeted by this spell stay powered for 18 seconds before turning back off. For a machine to function using this spell, it must still be in working condition.\r\n\r\nThe spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Light",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "V, M (a firefly or phosphorescent moss)",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "1 hour",
+            "text": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.\r\n\r\nIf you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "1 hour",
+            "text": "You touch one Large or smaller object that isn't being worn or carried by someone else. Until the spell ends, the object sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The light can be colored as you like.\r\n\r\nCovering the object with something opaque blocks the light. The spell ends if you cast it again.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Lightning Lure",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "V",
+        "versions": [
+          {
+            "source": "TCE",
+            "duration": "Instantaneous",
+            "text": "You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.\r\n\r\nThis spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Mage Hand",
+        "level": "Cantrip",
+        "school": "Conjuration",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "1 minute",
+            "text": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.\r\n\r\nYou can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.\r\n\r\nThe hand can't attack, activate magic items, or carry more than 10 pounds.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "1 minute",
+            "text": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.\r\n\r\nWhen you cast the spell, you can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial.\r\n\r\nAs a Magic action on your later turns, you can control the hand thus again. As part of that action, you can move the hand up to 30 feet.\r\n\r\nThe hand can't attack, activate magic items, or carry more than 10 pounds.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Magecraft",
+        "level": "Cantrip",
+        "school": "Divination",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "V, S, M (a set of Artisan's Tools or a Herbalism Kit)",
+        "versions": [
+          {
+            "source": "ExE'24",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You channel your arcane talent through a set of tools. Choose an Artisan Tool or Herbalism Kit. Until the spell ends, you add 1d6 to ability checks you make when you take the Utilize action with the chosen tool.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Magic Stone",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Bonus",
+        "range": "Touch",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "XGE",
+            "duration": "1 minute",
+            "text": "You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, a pebble has a range of 60 feet. If someone else attacks with a pebble, that attacker adds your spellcasting ability modifier, not the attacker's, to the attack roll. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier. Whether the attack hits or misses, the spell then ends on the stone.\r\n\r\nIf you cast this spell again, the spell ends on any pebbles still affected by your previous casting.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Magnetobolt",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "90 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "Instantaneous",
+            "text": "A near-invisible pulse of arcanomagnetic energy shoots towards a creature within range Make a ranged spell attack against the target On a hit, the target takes 1d6 force damage and must succeed on a Strength saving throw or be knocked prone A creature made of ferrous metal or wearing ferrous armour has disadvantage on this saving throw\r\n\r\nThis spell's damage increases by 1d6 when you reach 5th level 2d6 11th level 3d6 and 17th level 4d6",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Mend Plants",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "V, S, M (a small twig and a loop of twine)",
+        "versions": [
+          {
+            "source": "HWT",
+            "duration": "Instantaneous",
+            "text": "Drawing on primordial magic, you instill vitality in nearby plants to create one of the following effects within range:\r\n\r\nYou instantly repair a single break or tear in a living plant you touch, such as torn foliage, a scorched branch, a scar cut into bark, or two pieces of a plant that have been broken apart. As long as the damage is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former destruction.You instantly cause a defoliated plant to grow foliage, cause a planted seed to sprout, or restore the ability to sprout to a dead seed pod.You can cause a 5-foot cube of living plants to flourish with foliage such as leaves and grass. This area can become thick enough to conceal a Medium or smaller creature, or become overgrown enough to become difficult terrain (your choice when you cast the spell).You can touch a living plant or plant creature to grant it 1d4 temporary hit points.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Mending",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "1 Min.",
+        "range": "Touch",
+        "components": "V, S, M (two lodestones)",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Instantaneous",
+            "text": "This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.\r\n\r\nThis spell can physically repair a magic item or construct, but the spell can't restore magic to such an object.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.\r\n\r\nThis spell can physically repair a magic item, but it can't restore magic to such an object.",
+            "atHigherLevels": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Message",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "120 feet",
+        "components": "V, S, M (a short piece of copper wire)",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "1 round",
+            "text": "You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.\r\n\r\nYou can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn't have to follow a straight line and can travel freely around corners or through openings.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "1 round",
+            "text": "You point toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.\r\n\r\nYou can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence; 1 foot of stone, metal, or wood; or a thin sheet of lead blocks the spell.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Mind Sliver",
+        "level": "Cantrip",
+        "school": "Enchantment",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V",
+        "versions": [
+          {
+            "source": "TCE",
+            "duration": "1 round",
+            "text": "You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.\r\n\r\nThis spell's damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "You try to temporarily sliver the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 Psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+          }
+        ]
+      },
+      {
+        "name": "Minor Illusion",
+        "level": "Cantrip",
+        "school": "Illusion",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "S, M (a bit of fleece)",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "1 minute",
+            "text": "You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.\r\n\r\nIf you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.\r\n\r\nIf you create an image of an object—such as a chair, muddy footprints, or a small chest—it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.\r\n\r\nIf a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "1 minute",
+            "text": "You create a sound or an image of an object within range that lasts for the duration. See the descriptions below for the effects of each. The illusion ends if you cast this spell again.\r\n\r\nIf a creature takes a Study action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.\r\n\r\nSound. If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.\r\n\r\nImage. If you create an image of an object—such as a chair, muddy footprints, or a small chest—it must be no larger than a 5-foot Cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, since things can pass through it.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Mold Earth",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "S",
+        "versions": [
+          {
+            "source": "XGE",
+            "duration": "Instantaneous or 1 hour (see below)",
+            "text": "You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:\r\n\r\nIf you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't involve enough force to cause damage.You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour.If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Moment to Think",
+        "level": "Cantrip",
+        "school": "Transmutation (Chronomancy)",
+        "castingTime": "Bonus",
+        "range": "Self",
+        "components": "V",
+        "versions": [
+          {
+            "source": "VSS:PP",
+            "duration": "Instantaneous",
+            "text": "When you cast this spell, you briefly stop time for everyone but yourself. You can take one additional action and move around in your space while no time passes for other creatures. That action can be used only to take the Search, Study, or Utilize action. Furthermore, you can't affect or damage any creature or object, other than objects you are wearing or carrying. If an object leaves your hand, it also becomes frozen in time.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Mysterious Presence",
+        "level": "Cantrip",
+        "school": "Illusion",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "TCM'14",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You touch a willing creature and shroud its presence. Until the spell ends, other creatures must subtract 1d4 from any Wisdom (Insight or Perception) checks made against the target.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "TCM'24",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You touch a willing creature and shroud its presence. Until the spell ends, other creatures must subtract 1d4 from any Wisdom (Insight or Perception) checks made against the target.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Obfuscate Object",
+        "level": "Cantrip",
+        "school": "Illusion",
+        "castingTime": "Bonus",
+        "range": "10 feet",
+        "components": "S",
+        "versions": [
+          {
+            "source": "BoET",
+            "duration": "Concentration, up to 1 minute",
+            "text": "While you are in dim light, you cause an object in range to become unobtrusively obscured from the sight of other creatures. For the duration, you have advantage on Dexterity (Sleight of Hand) checks to hide the object. The object can't be larger than a shortsword, and it must be on your person, held in your hand, or otherwise unattended.\r\n\r\nYou can affect two objects when you reach 5th level, three objects at 11th level, and four objects at 17th level.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Orien Step",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Bonus",
+        "range": "Self",
+        "components": "S",
+        "versions": [
+          {
+            "source": "FoEQ",
+            "duration": "Instantaneous",
+            "text": "You teleport up to five feet to an unoccupied space you can see. You cannot teleport through solid objects or out of manacles and similar restraints.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Pins & Needles",
+        "level": "Cantrip",
+        "school": "Biomancy",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "Instantaneous",
+            "text": "509509Appendix B | SpellsYou momentarily shut down a small part of the nervous system of a creature you can see within range, before overstimulating it and causing crippling pain The creature must succeed on a Constitution saving throw or take 1d8 psychic damage If the target fails its saving throw by 5 or more, it has disadvantage on the next attack roll it makes before the end of its next turn as it temporarily loses full control of a part of its body\r\n\r\nThis spell's damage increases by 1d8 when you reach 5th level 2d8 11th level 3d8 and 17th level 4d8",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Poison Needle",
+        "level": "Cantrip",
+        "school": "Conjuration",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "SCGtD",
+            "duration": "Instantaneous",
+            "text": "You launch a conjured dart coated with lethal poison at a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 poison damage.\r\n\r\nIf the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.\r\n\r\nThis spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+            "atHigherLevels": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Poison Spray",
+        "level": "Cantrip",
+        "school": "Conjuration",
+        "castingTime": "Action",
+        "range": "10 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Instantaneous",
+            "text": "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.\r\n\r\nThis spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "You spray toxic mist at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d12 when you reach levels 5 (2d12), 11 (3d12), and 17 (4d12)."
+          }
+        ]
+      },
+      {
+        "name": "Preserve",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "V, S, M (a sack containing a pinch of salt)",
+        "versions": [
+          {
+            "source": "GH:PG'24",
+            "duration": "12 hours",
+            "text": "Food and other perishable items weighing 5 pounds or less that you place in a sack don't age or decay for the duration.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Prestidigitation",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "10 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Up to 1 hour",
+            "text": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:\r\n\r\nYou create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.You instantaneously light or snuff out a candle, a torch, or a small campfire.You instantaneously clean or soil an object no larger than 1 cubic foot.You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "1 hour",
+            "text": "You create a magical effect within range. Choose the effect from the options below. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time.\r\n\r\nSensory Effect. You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.\r\n\r\nFire Play. You instantaneously light or snuff out a candle, a torch, or a small campfire.\r\n\r\nClean or Soil. You instantaneously clean or soil an object no larger than 1 cubic foot.\r\n\r\nMinor Sensation. You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.\r\n\r\nMagic Mark. You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.\r\n\r\nMinor Creation. You create a nonmagical trinket or an illusory image that can fit in your hand. It lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Primal Savagery",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "S",
+        "versions": [
+          {
+            "source": "XGE",
+            "duration": "Instantaneous",
+            "text": "You channel primal magic to cause your teeth or fingernails to sharpen, ready to deliver a corrosive attack. Make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes 1d10 acid damage. After you make the attack, your teeth or fingernails return to normal.\r\n\r\nThe spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Primal Scent",
+        "level": "Cantrip",
+        "school": "Divination",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "S",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You inhale deeply, magically enhancing the scents that surround you You have advantage on the next ability check you make that relies on smell, and you can treat a roll of 4 or lower as a 5\r\n\r\nWhen you reach higher levels, this spell gives you an increasingly astute ability to identify the source of the scents around you When you reach 5th level, whenever you make an ability check that relies on smell, you can treat a d20 roll of 7 or lower as an 8 At 11th level, a roll of 10 or lower is treated as an 11, and at 17th level, a roll of 13 or lower is treated as a 14",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Produce Flame",
+        "level": "Cantrip",
+        "school": "Conjuration",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "10 minutes",
+            "text": "A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.\r\n\r\nYou can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.\r\n\r\nThis spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "10 minutes",
+            "text": "A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The spell ends if you cast it again.\r\n\r\nUntil the spell ends, you can take a Magic action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+          }
+        ]
+      },
+      {
+        "name": "Ray of Frost",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Instantaneous",
+            "text": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.\r\n\r\nThe spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 Cold damage, and its Speed is reduced by 10 feet until the start of your next turn.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+          }
+        ]
+      },
+      {
+        "name": "Resilient Friendship",
+        "level": "Cantrip",
+        "school": "Enchantment",
+        "castingTime": "Action",
+        "range": "5 feet",
+        "components": "V",
+        "versions": [
+          {
+            "source": "O:TTG",
+            "duration": "Instantaneous",
+            "text": "You magically assist a creature within range, granting it the benefits of the Help action. If the target you helped successfully accomplishes the task by the start of your next turn, you gain 1d4 temporary hit points, which last for 1 hour.\r\n\r\nThe number of temporary hit points you gain increases when you reach 5th level (1d6), 11th level (1d8), and 17th level (1d10).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Resistance",
+        "level": "Cantrip",
+        "school": "Abjuration",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "V, S, M (a miniature cloak)",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You touch a willing creature and choose a damage type: Acid, Bludgeoning, Cold, Fire, Lightning, Necrotic, Piercing, Poison, Radiant, Slashing, or Thunder. When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by 1d4. A creature can benefit from this spell only once per turn.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Retrieve",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Bonus",
+        "range": "15 feet",
+        "components": "V",
+        "versions": [
+          {
+            "source": "O:TTG",
+            "duration": "Instantaneous",
+            "text": "You cause an object within range that isn't being worn or carried to fly to your open hand. The object must weigh no more than 10 pounds or the spell fails.",
+            "atHigherLevels": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Root Grab",
+        "level": "Cantrip",
+        "school": "Conjuration",
+        "castingTime": "Reaction",
+        "range": "10 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "O:TTG",
+            "duration": "Instantaneous",
+            "text": "You cause roots to reach out and grasp at the creature that provoked the opportunity attack, hindering its movement. The creature's speed is reduced by 10 feet until the start of your next turn.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Sacred Flame",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Instantaneous",
+            "text": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.\r\n\r\nThe spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 Radiant damage. The target gains no benefit from Half Cover or Three-Quarters Cover for this save.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+          }
+        ]
+      },
+      {
+        "name": "Sapping Sting",
+        "level": "Cantrip",
+        "school": "Necromancy",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "EGW",
+            "duration": "Instantaneous",
+            "text": "You sap the vitality of one creature you can see in range. The target must succeed on a Constitution saving throw or take 1d4 necrotic damage and fall prone.\r\n\r\nThis spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Shadow Bite",
+        "level": "Cantrip",
+        "school": "Illusion",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "TftS",
+            "duration": "Instantaneous",
+            "text": "You create a momentary needle of cold, sharp pain in a creature within range. The target must make a successful Constitution saving throw or take 1d6 necrotic damage immediately and have its speed halved until the start of your next turn.\r\n\r\nThis spell's damage increases to 2d6 when you reach 5th level, 3d6 when you reach 11th level, and 4d6 when you reach 17th level.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Shadow Blindness",
+        "level": "Cantrip",
+        "school": "Illusion",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "TftS",
+            "duration": "1 round",
+            "text": "You make a melee spell attack against a creature you touch that has darkvision as an innate ability; on a hit, the target's darkvision is negated until the spell ends. This spell has no effect against darkvision that derives from a spell or a magic item. The target retains all its other senses.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Shape Water",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "S",
+        "versions": [
+          {
+            "source": "XGE",
+            "duration": "Instantaneous or 1 hour (see below)",
+            "text": "You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:\r\n\r\nYou instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour.If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Shillelagh",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Bonus",
+        "range": "Touch",
+        "components": "V, S, M (mistletoe, a shamrock leaf, and a club or quarterstaff)",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "1 minute",
+            "text": "The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "1 minute",
+            "text": "A Club or Quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon's normal damage type (your choice).\r\n\r\nThe spell ends early if you cast it again or if you let go of the weapon.",
+            "atHigherLevels": "Cantrip Upgrade. The damage die changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6)."
+          }
+        ]
+      },
+      {
+        "name": "Shocking Grasp",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Instantaneous",
+            "text": "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can't take reactions until the start of its next turn.\r\n\r\nThe spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "Lightning springs from you to a creature that you try to touch. Make a melee spell attack against the target. On a hit, the target takes 1d8 Lightning damage, and it can't make Opportunity Attacks until the start of its next turn.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+          }
+        ]
+      },
+      {
+        "name": "Smokescreen",
+        "level": "Cantrip",
+        "school": "Conjuration",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "V, S, M (a puffball mushroom)",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "Concentration, up to 1 round",
+            "text": "You spew a thick cloud of dense black smoke that forms a 5-foot-diameter, 10-foot-high cylinder centred on you that lasts until the start of your next turn The smoke heavily obscures its area When you cast the spell, you can choose whether the cloud remains in the location where you cast it or moves with you, centred on you\r\n\r\nWhen you reach higher levels, the size of the cloud you can create with this spell increases When you reach 5th level, the cloud has a maximum diameter of 15 feet and a height of 20 feet; at 11th level this increases to 25 feet and 30 feet; and at 17th level this increases to 35 feet and 40 feet You choose how big the cloud is in each dimension up to this maximum each time that you cast it",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Sorcerous Burst",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "120 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.\r\n\r\nIf you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell's damage equals your spellcasting ability modifier.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Spare the Dying",
+        "level": "Cantrip",
+        "school": "Necromancy",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Instantaneous",
+            "text": "You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "Choose a creature within range that has 0 Hit Points and isn't dead. The creature becomes Stable.",
+            "atHigherLevels": "Cantrip Upgrade. The range doubles when you reach levels 5 (30 feet), 11 (60 feet), and 17 (120 feet)."
+          }
+        ]
+      },
+      {
+        "name": "Spark",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "Instantaneous",
+            "text": "A spark of bright light arcs from you to a creature within range Make a ranged spell attack against the target On a hit, the target takes 1d8 lightning damage On a critical hit, the target is also blinded until the end of its next turn\r\n\r\nThe spell creates more than one spark when you reach higher levels: two sparks at 5th level, three sparks at 11th level, and four sparks at 17th level You can direct the sparks at the same target or at different ones Make a separate attack roll for each spark",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Spore Cloud",
+        "level": "Cantrip",
+        "school": "Biomancy",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "V, S, M (a toadstool)",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "Instantaneous",
+            "text": "You produce a cloud of virulent spores Each creature within 5 feet of you, other than you, must succeed on a Constitution saving throw or take 1d4 poison damage A creature that fails the saving throw by 5 or more is poisoned until the end of its next turn\r\n\r\nThe spell's damage increases by 1d6 when you reach 5th level 2d4 11th level 3d4 and 17th level 4d4",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Stalker's Eye",
+        "level": "Cantrip",
+        "school": "Enchantment",
+        "castingTime": "Action",
+        "range": "Touch",
+        "components": "V, S, M (small magnifying lens)",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "Concentration, up to 1 minute",
+            "text": "A willing creature you touch gains a preternatural ability to perceive the weaknesses in a creature's defences. The first time the creature makes an attack while under the effect of this spell, it makes the attack with advantage. After it makes an attack, the spell ends\r\n\r\nThis spell augments the creature's ability to strike at vital points when you reach certain levels When you reach 5th level, the augmented attack scores a critical hit on a roll of 19 or 20 At 11th level, this range is increased to 18 to 20, and at 17th level, this range becomes 17 to 20",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Starry Wisp",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can't benefit from the Invisible condition.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+          }
+        ]
+      },
+      {
+        "name": "Swarm",
+        "level": "Cantrip",
+        "school": "Biomancy",
+        "castingTime": "Action",
+        "range": "90 feet",
+        "components": "V, S, M (a spider sac)",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "1 round",
+            "text": "Choose a target within range; a cloud of miniscule poisonous spiders floats on gossamer strands towards it The target must succeed on a Dexterity saving throw to avoid the spiders or become poisoned until the end of its next turn\r\n\r\nThis spell deals poison damage on a failed saving throw when you reach certain levels When you reach 5th level, a creature takes 1d10 poison damage; at 11th level this increases to 2d10 and at 17th level this increases to 3d10",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Sword Burst",
+        "level": "Cantrip",
+        "school": "Conjuration",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "V",
+        "versions": [
+          {
+            "source": "TCE",
+            "duration": "Instantaneous",
+            "text": "You create a momentary circle of spectral blades that sweep around you. All other creatures within 5 feet of you must succeed on a Dexterity saving throw or take 1d6 force damage.\r\n\r\nThis spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Task",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "15 feet",
+        "components": "S",
+        "versions": [
+          {
+            "source": "O:TTG",
+            "duration": "Up to 1 hour",
+            "text": "With a flick of your wrist, you magically complete a small and simple task, such as flipping a book page, buttering bread, or heating a cup of tea, without any physical interaction. The task can't include anything that is intended to inflict a harmful effect on a creature and must be something you'd normally be able to accomplish without the use of magic. The spell fails if the target of the task has total cover from you.\r\n\r\nIf you cast this spell multiple times, you can have up to three tasks active at a time, and you can dismiss one of them as a bonus action.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Thaumaturgy",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Up to 1 minute",
+            "text": "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:\r\n\r\nYour voice booms up to three times as loud as normal for 1 minute.You cause flames to flicker, brighten, dim, or change color for 1 minute.You cause harmless tremors in the ground for 1 minute.You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.You instantaneously cause an unlocked door or window to fly open or slam shut.You alter the appearance of your eyes for 1 minute.If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "1 minute",
+            "text": "You manifest a minor wonder within range. You create one of the effects below within range. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time.\r\n\r\nAltered Eyes. You alter the appearance of your eyes for 1 minute.\r\n\r\nBooming Voice. Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on Charisma (Intimidation) checks.\r\n\r\nFire Play. You cause flames to flicker, brighten, dim, or change color for 1 minute.\r\n\r\nInvisible Hand. You instantaneously cause an unlocked door or window to fly open or slam shut.\r\n\r\nPhantom Sound. You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.\r\n\r\nTremors. You cause harmless tremors in the ground for 1 minute.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Thorn Whip",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "V, S, M (the stem of a plant with thorns)",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Instantaneous",
+            "text": "You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes 1d6 piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you.\r\n\r\nThis spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "You create a vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. On a hit, the target takes 1d6 Piercing damage, and if it is Large or smaller, you can pull it up to 10 feet closer to you.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Thunderclap",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "5 feet",
+        "components": "S",
+        "versions": [
+          {
+            "source": "XGE",
+            "duration": "Instantaneous",
+            "text": "You create a burst of thunderous sound that can be heard up to 100 feet away. Each creature within range, other than you, must make a Constitution saving throw or take 1d6 thunder damage.\r\n\r\nThe spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Thunder damage. The spell's thunderous sound can be heard up to 100 feet away.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+          }
+        ]
+      },
+      {
+        "name": "Toll the Dead",
+        "level": "Cantrip",
+        "school": "Necromancy",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "XGE",
+            "duration": "Instantaneous",
+            "text": "You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.\r\n\r\nThe spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "You point at one creature you can see within range, and the single chime of a dolorous bell is audible within 10 feet of the target. The target must succeed on a Wisdom saving throw or take 1d8 Necrotic damage. If the target is missing any of its Hit Points, it instead takes 1d12 Necrotic damage.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by one die when you reach levels 5 (2d8 or 2d12), 11 (3d8 or 3d12), and 17 (4d8 or 4d12)."
+          }
+        ]
+      },
+      {
+        "name": "True Strike",
+        "level": "Cantrip",
+        "school": "Divination",
+        "castingTime": "Action",
+        "range": "30 feet",
+        "components": "S",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Concentration, up to 1 round",
+            "text": "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).",
+            "atHigherLevels": "Cantrip Upgrade. Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6)."
+          }
+        ]
+      },
+      {
+        "name": "Vengeful Blade",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "Self",
+        "components": "S, M (a melee weapon worth at least 1 gp)",
+        "versions": [
+          {
+            "source": "IllR",
+            "duration": "Instantaneous",
+            "text": "You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then radiates a dark aura of energy until the start of your next turn. If the target makes an attack or casts a spell before then, the target takes 1d8 necrotic damage and the spell ends.\r\n\r\nThis spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 necrotic damage to the target on a hit, and the damage the target takes for making an attack or casting a spell increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Vicious Mockery",
+        "level": "Cantrip",
+        "school": "Enchantment",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V",
+        "versions": [
+          {
+            "source": "PHB'14",
+            "duration": "Instantaneous",
+            "text": "You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.\r\n\r\nThis spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "You unleash a string of insults laced with subtle enchantments at one creature you can see or hear within range. The target must succeed on a Wisdom saving throw or take 1d6 Psychic damage and have Disadvantage on the next attack roll it makes before the end of its next turn.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+          }
+        ]
+      },
+      {
+        "name": "Water Whip",
+        "level": "Cantrip",
+        "school": "Transmutation",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "HGtMH",
+            "duration": "Instantaneous",
+            "text": "Choose a source of water that you can see within range that has a volume of at least 1 gallon Make a melee spell attack against a creature within 30 feet of the source of water On a hit, the target takes 1d6 slashing damage and, if the creature is Large or smaller, you can force it to make a Strength saving throw, pulling it up to 10 feet towards the body of water on a failure\r\n\r\nThe spell's damage and distance it can pull a target increases when you reach 5th level 2d6 and 15 feet), 11th level 3d6 and 20 feet), and 17th level 4d6 and 25 feet)",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Word of Misfortune",
+        "level": "Cantrip",
+        "school": "Enchantment",
+        "castingTime": "Action",
+        "range": "60 feet",
+        "components": "V, S",
+        "versions": [
+          {
+            "source": "BoET",
+            "duration": "Concentration, up to 1 minute",
+            "text": "You hiss a word of void speech. Choose one creature you can see within range. The next time the creature makes a saving throw during the spell's duration, it must roll a d4 and subtract the result from the total of the saving throw. The spell then ends.",
+            "atHigherLevels": ""
+          }
+        ]
+      },
+      {
+        "name": "Word of Radiance",
+        "level": "Cantrip",
+        "school": "Evocation",
+        "castingTime": "Action",
+        "range": "5 feet",
+        "components": "V, M (a holy symbol)",
+        "versions": [
+          {
+            "source": "XGE",
+            "duration": "Instantaneous",
+            "text": "You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving throw or take 1d6 radiant damage.\r\n\r\nThe spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+            "atHigherLevels": ""
+          },
+          {
+            "source": "PHB'24",
+            "duration": "Instantaneous",
+            "text": "Burning radiance erupts from you in a 5-foot Emanation. Each creature of your choice that you can see in it must succeed on a Constitution saving throw or take 1d6 Radiant damage.",
+            "atHigherLevels": "Cantrip Upgrade. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+          }
+        ]
+      }
+    ]
+  ]
+}

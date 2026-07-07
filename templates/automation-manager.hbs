@@ -1,0 +1,125 @@
+<div class="fam-body">
+    {{#if detail}}
+
+    <header class="fam-detail-header">
+        <button type="button" class="fam-back" data-action="backToList"
+                data-tooltip="{{localize 'FANTIK-AUTOMATIONS.Manager.Back'}}">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <h2 class="fam-detail-name">{{detail.name}}</h2>
+        <span class="fam-status {{#if detail.active}}fam-status-on{{/if}}">{{detail.statusLabel}}</span>
+    </header>
+
+    {{#if detail.description}}
+    <p class="fam-desc">{{detail.description}}</p>
+    {{/if}}
+
+    <div class="fam-detail-tags">
+        {{#if detail.version}}<span class="fam-tag">v{{detail.version}}</span>{{/if}}
+        {{#if detail.gmOnly}}
+        <span class="fam-tag fam-tag-gm" data-tooltip="{{localize 'FANTIK-AUTOMATIONS.Manager.GMOnlyHint'}}">
+            <i class="fa-solid fa-lock"></i> {{localize 'FANTIK-AUTOMATIONS.Manager.GMOnly'}}
+        </span>
+        {{/if}}
+        {{#if detail.byName}}
+        <span class="fam-tag" data-tooltip="{{localize 'FANTIK-AUTOMATIONS.Manager.ByNameHint'}}">
+            <i class="fa-solid fa-signature"></i> {{localize 'FANTIK-AUTOMATIONS.Manager.ByName'}}
+        </span>
+        {{/if}}
+        {{#unless detail.enabled}}
+        <span class="fam-tag fam-tag-off" data-tooltip="{{localize 'FANTIK-AUTOMATIONS.Manager.WorldDisabledHint'}}">
+            <i class="fa-solid fa-ban"></i> {{localize 'FANTIK-AUTOMATIONS.Manager.WorldDisabled'}}
+        </span>
+        {{/unless}}
+    </div>
+
+    {{#if detail.locked}}
+    <p class="fam-locked-notice">
+        <i class="fa-solid fa-lock"></i> {{localize 'FANTIK-AUTOMATIONS.Manager.GMOnlyNotice'}}
+    </p>
+    {{else}}
+    <button type="button" data-action="toggleAutomation" data-automation-id="{{detail.id}}"
+            class="fam-big-toggle {{#if detail.active}}fam-big-toggle-remove{{else}}fam-big-toggle-apply{{/if}}">
+        <i class="fa-solid fa-power-off"></i> {{detail.toggleLabel}}
+    </button>
+    {{/if}}
+
+    <fieldset class="fam-settings">
+        <legend>{{localize 'FANTIK-AUTOMATIONS.Manager.Settings'}}</legend>
+        {{#each detail.fields}}
+        <div class="form-group">
+            <label>{{label}}</label>
+            <div class="form-fields">
+                {{#if isCheckbox}}
+                <input type="checkbox" data-setting-key="{{key}}" {{#if value}}checked{{/if}}
+                       {{#if @root.detail.locked}}disabled{{/if}}>
+                {{/if}}
+                {{#if isNumber}}
+                <input type="number" data-setting-key="{{key}}" value="{{value}}"
+                       {{#if min includeZero=true}}min="{{min}}"{{/if}}
+                       {{#if max includeZero=true}}max="{{max}}"{{/if}}
+                       {{#if step}}step="{{step}}"{{/if}}
+                       {{#if @root.detail.locked}}disabled{{/if}}>
+                {{/if}}
+                {{#if isSelect}}
+                <select data-setting-key="{{key}}" {{#if @root.detail.locked}}disabled{{/if}}>
+                    {{#each options}}
+                    <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+                    {{/each}}
+                </select>
+                {{/if}}
+                {{#if isText}}
+                <input type="text" data-setting-key="{{key}}" value="{{value}}"
+                       {{#if @root.detail.locked}}disabled{{/if}}>
+                {{/if}}
+            </div>
+            {{#if hint}}<p class="hint">{{hint}}</p>{{/if}}
+        </div>
+        {{/each}}
+        {{#unless detail.fields.length}}
+        <p class="fam-no-settings">{{localize 'FANTIK-AUTOMATIONS.Manager.NoSettings'}}</p>
+        {{/unless}}
+    </fieldset>
+
+    {{else}}
+
+    <div class="fam-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" value="{{search}}" placeholder="{{localize 'FANTIK-AUTOMATIONS.Manager.SearchPlaceholder'}}"
+               autocomplete="off" spellcheck="false">
+    </div>
+    <ul class="fam-list">
+        {{#each rows}}
+        <li class="fam-row {{#if active}}fam-row-active{{/if}}" data-action="openAutomation"
+            data-automation-id="{{id}}" data-search="{{searchText}}">
+            <i class="fam-row-icon fa-solid {{#if active}}fa-circle-check{{else}}fa-circle-dot{{/if}}"></i>
+            <div class="fam-info">
+                <span class="fam-name">{{name}}</span>
+                <span class="fam-tags">
+                    {{#if locked}}
+                    <span class="fam-tag fam-tag-gm" data-tooltip="{{localize 'FANTIK-AUTOMATIONS.Manager.GMOnlyHint'}}">
+                        <i class="fa-solid fa-lock"></i> {{localize 'FANTIK-AUTOMATIONS.Manager.GMOnly'}}
+                    </span>
+                    {{/if}}
+                    {{#if byName}}
+                    <span class="fam-tag" data-tooltip="{{localize 'FANTIK-AUTOMATIONS.Manager.ByNameHint'}}">
+                        {{localize 'FANTIK-AUTOMATIONS.Manager.ByName'}}
+                    </span>
+                    {{/if}}
+                    {{#unless enabled}}
+                    <span class="fam-tag fam-tag-off" data-tooltip="{{localize 'FANTIK-AUTOMATIONS.Manager.WorldDisabledHint'}}">
+                        {{localize 'FANTIK-AUTOMATIONS.Manager.WorldDisabled'}}
+                    </span>
+                    {{/unless}}
+                </span>
+            </div>
+            <i class="fam-row-chevron fa-solid fa-chevron-right"></i>
+        </li>
+        {{/each}}
+        {{#unless rows.length}}
+        <li class="fam-empty">{{localize 'FANTIK-AUTOMATIONS.Manager.Empty'}}</li>
+        {{/unless}}
+    </ul>
+
+    {{/if}}
+</div>

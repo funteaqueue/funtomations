@@ -1,0 +1,650 @@
+/* ==========================================================================
+   Balatro Casino Aesthetics (Retro Neon & Psychedelic Styles)
+   ========================================================================== */
+
+/* Main Container and CRT Effect */
+.balatro-casino {
+    background: linear-gradient(135deg, #0e051c 0%, #1a0a33 100%);
+    color: #f0e6ff;
+    padding: 15px;
+    border-radius: 12px;
+    border: 3px solid #ff00a0;
+    box-shadow: 0 0 25px rgba(255, 0, 160, 0.5), inset 0 0 15px rgba(0, 255, 255, 0.2);
+    font-family: "Outfit", "Segoe UI", Roboto, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.balatro-casino.crt::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04));
+    background-size: 100% 4px, 4px 100%;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+.balatro-casino * {
+    z-index: 2;
+}
+
+/* Typography & Neon Glows */
+.balatro-casino .neon-text {
+    color: #fff;
+    text-shadow: 0 0 5px #ff00a0, 0 0 10px #ff00a0, 0 0 20px #00ffff;
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 5px 0 15px;
+    letter-spacing: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.balatro-casino .stakes-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 8px 15px;
+    width: fit-content;
+    margin: 0 auto 20px;
+}
+
+.balatro-casino .stakes-display .label {
+    font-size: 1rem;
+    color: #ff00a0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.balatro-casino .chips-neon {
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+    font-size: 1.4rem;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Active Jokers Area */
+.balatro-casino .jokers-area {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 0, 160, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.balatro-casino .section-title {
+    font-size: 0.8rem;
+    color: #00ffff;
+    text-align: center;
+    margin: 0 0 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.balatro-casino .jokers-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 80px;
+    flex-wrap: wrap;
+}
+
+.balatro-casino .no-jokers {
+    font-size: 0.9rem;
+    color: rgba(240, 230, 255, 0.4);
+    font-style: italic;
+}
+
+.balatro-casino .joker-card {
+    width: 65px;
+    height: 95px;
+    background: radial-gradient(circle, #2d1854 0%, #15092d 100%);
+    border: 2px solid #ff00a0;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5), 0 0 5px rgba(255, 0, 160, 0.3);
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    animation: gentle-float 3s ease-in-out infinite alternate;
+}
+
+.balatro-casino .joker-card:nth-child(even) {
+    animation-delay: -1.5s;
+}
+
+.balatro-casino .joker-card:hover {
+    transform: translateY(-8px) rotate(4deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 0, 160, 0.6), 0 0 15px rgba(0, 255, 255, 0.4);
+    border-color: #00ffff;
+}
+
+.balatro-casino .joker-card .joker-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.balatro-casino .joker-card .joker-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+}
+
+.balatro-casino .joker-card .joker-name {
+    font-size: 0.55rem;
+    text-align: center;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin-top: 2px;
+}
+
+/* Animations */
+@keyframes gentle-float {
+    0% { transform: translateY(0) rotate(-1.5deg); }
+    100% { transform: translateY(-4px) rotate(1.5deg); }
+}
+
+@keyframes coin-flip-animation {
+    0% { transform: rotateY(0deg) scale(1); }
+    50% { transform: rotateY(900deg) scale(1.3); }
+    100% { transform: rotateY(1800deg) scale(1); }
+}
+
+/* Coinflip Game Elements */
+.balatro-casino .game-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.balatro-casino .coin-container {
+    perspective: 1000px;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 25px;
+}
+
+.balatro-casino .coin-3d {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-out;
+}
+
+.balatro-casino .coin-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #ffcc00;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.balatro-casino .coin-face.heads {
+    background: radial-gradient(circle, #ffe680 0%, #b38600 100%);
+    transform: rotateY(0deg);
+}
+
+.balatro-casino .coin-face.tails {
+    background: radial-gradient(circle, #ffd480 0%, #b35900 100%);
+    transform: rotateY(180deg);
+}
+
+.balatro-casino .coin-design {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.5), 0 0 10px rgba(255,255,255,0.4);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.balatro-casino .choices-container {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.balatro-casino .btn-casino {
+    flex: 1;
+    background: rgba(0,0,0,0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 1px;
+}
+
+.balatro-casino .btn-casino:hover {
+    background: rgba(255, 0, 160, 0.15);
+    border-color: #ff00a0;
+    box-shadow: 0 0 8px rgba(255, 0, 160, 0.4);
+}
+
+.balatro-casino .btn-casino.selected {
+    background: #ff00a0;
+    border-color: #ff00a0;
+    box-shadow: 0 0 15px rgba(255, 0, 160, 0.7);
+    text-shadow: 0 0 5px #fff;
+}
+
+.balatro-casino .btn-heads.selected {
+    background: #ffcc00;
+    border-color: #ffcc00;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
+    text-shadow: none;
+}
+
+.balatro-casino .btn-tails.selected {
+    background: #ff5500;
+    border-color: #ff5500;
+    box-shadow: 0 0 15px rgba(255, 85, 0, 0.7);
+}
+
+/* Roulette Game Elements */
+.balatro-casino .wheel-outer {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    margin: 15px auto 25px;
+}
+
+.balatro-casino .roulette-wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid #29150b;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.85), 0 0 15px rgba(255, 0, 160, 0.5);
+    background: #111;
+    position: relative;
+    transition: transform 4s cubic-bezier(0.1, 0.8, 0.1, 1);
+    overflow: hidden;
+}
+
+.balatro-casino .wheel-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+}
+
+.balatro-casino .wheel-pocket {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 18px;
+    height: 22px;
+    margin-top: -11px;
+    margin-left: -9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
+}
+
+.balatro-casino .wheel-pocket.green { background-color: #00e600; border-top: 2px solid #00ff66; }
+.balatro-casino .wheel-pocket.red { background-color: #ff2a5f; border-top: 2px solid #ff0055; }
+.balatro-casino .wheel-pocket.black { background-color: #1f1f1f; border-top: 2px solid #333; }
+
+.balatro-casino .pocket-num {
+    font-size: 9px;
+    font-weight: 900;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.balatro-casino .wheel-ball-container {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 0; height: 0;
+    transform-origin: center;
+    transition: transform 4s cubic-bezier(0.15, 0.85, 0.15, 1.05);
+}
+
+.balatro-casino .wheel-ball {
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff, inset 1px 1px 2px rgba(0,0,0,0.5);
+    position: absolute;
+    top: -115px; left: -6.5px;
+    z-index: 5;
+    transition: top 4s cubic-bezier(0.15, 0.85, 0.15, 1.05);
+}
+
+.balatro-casino .wheel-center {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, #ffe680 0%, #b38600 100%);
+    border: 4px solid #806000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6), inset 0 2px 4px rgba(255,255,255,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 0px rgba(255,255,255,0.4);
+    z-index: 8;
+}
+
+.balatro-casino .betting-board {
+    width: 100%;
+    max-width: 360px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 0, 160, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.balatro-casino .pool-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+    padding-bottom: 8px;
+}
+
+.balatro-casino .pool-status .value {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+    font-size: 1.15rem;
+}
+
+.balatro-casino .bet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.balatro-casino .bet-cell {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.2s ease;
+}
+
+.balatro-casino .bet-cell:hover {
+    border-color: #ff00a0;
+    background: rgba(255,0,160,0.05);
+}
+
+.balatro-casino .bet-cell.active-bet {
+    border-color: #ff00a0;
+    box-shadow: 0 0 8px rgba(255, 0, 160, 0.3);
+}
+
+.balatro-casino .bet-label {
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.balatro-casino .bet-red .bet-label { color: #ff2a5f; }
+.balatro-casino .bet-black .bet-label { color: #a3a3a3; }
+.balatro-casino .bet-green .bet-label { color: #00e600; }
+
+.balatro-casino .bet-input {
+    width: 60px;
+    height: 24px !important;
+    background: #090312;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+    color: #fff !important;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0;
+    font-size: 0.85rem;
+}
+
+.balatro-casino .bet-input:focus {
+    border-color: #00ffff !important;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.balatro-casino .bet-number-container {
+    grid-column: span 3;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.balatro-casino .bet-number-container .bet-label {
+    color: #ffd480;
+    margin-bottom: 2px;
+}
+
+.balatro-casino .number-bet-inputs {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.balatro-casino .number-select {
+    width: 80px;
+    height: 24px;
+    background: #090312;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
+/* Footer / Spin Action */
+.balatro-casino .casino-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.balatro-casino .neon-btn {
+    background: transparent;
+    border: 2.5px solid #00ffff;
+    color: #00ffff;
+    font-size: 1.3rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3), inset 0 0 5px rgba(0, 255, 255, 0.2);
+    transition: all 0.2s ease;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.balatro-casino .neon-btn:hover:not(:disabled) {
+    background: #00ffff;
+    color: #000;
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+    text-shadow: none;
+    font-weight: 900;
+}
+
+.balatro-casino .neon-btn:disabled {
+    border-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.15);
+    cursor: not-allowed;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+/* Chat Card Retro Arcade Styles */
+.balatro-chat-card {
+    background: linear-gradient(135deg, #090312 0%, #15092d 100%);
+    border: 2px solid #ff00a0;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 0, 160, 0.3);
+    padding: 10px;
+    color: #eee;
+    font-family: "Courier New", Courier, monospace;
+    position: relative;
+    overflow: hidden;
+}
+
+.balatro-chat-card .header-title {
+    color: #00ffff;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ffff;
+    text-align: center;
+    border-bottom: 1.5px solid rgba(255, 0, 160, 0.3);
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+}
+
+.balatro-chat-card .step-log {
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    line-height: 1.15rem;
+}
+
+.balatro-chat-card .log-joker {
+    color: #ff00a0;
+    text-shadow: 0 0 3px rgba(255, 0, 160, 0.5);
+    font-weight: bold;
+}
+
+.balatro-chat-card .result-summary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.balatro-chat-card .total-label {
+    font-size: 0.75rem;
+    color: #ffd480;
+    font-weight: bold;
+}
+
+.balatro-chat-card .total-value {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #00ff66;
+    text-shadow: 0 0 8px #00ff66;
+}
+
+/* Roulette Specific Layout Sizing & Overrides */
+.balatro-casino.roulette-game .game-body {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 15px 0;
+}
+
+.balatro-casino.roulette-game .wheel-outer {
+    width: 380px;
+    height: 380px;
+    margin: 0;
+}
+
+.balatro-casino.roulette-game .wheel-pocket {
+    width: 22px;
+    height: 28px;
+    margin-top: -14px;
+    margin-left: -11px;
+}
+
+.balatro-casino.roulette-game .pocket-num {
+    font-size: 11px;
+}
+
+.balatro-casino.roulette-game .wheel-ball {
+    width: 15px;
+    height: 15px;
+    top: -155px;
+    left: -7.5px;
+}
+
+.balatro-casino.roulette-game .wheel-center {
+    width: 80px;
+    height: 80px;
+    font-size: 0.95rem;
+}
+
+.balatro-casino.roulette-game .betting-board {
+    max-width: 380px;
+    flex-grow: 1;
+}
+
+@keyframes neon-flash {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
+
+/* Pulse animation used by headers and the low-time timer */
+.animate-pulse {
+    animation: casino-pulse 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes casino-pulse {
+    from {
+        opacity: 0.65;
+    }
+    to {
+        opacity: 1;
+    }
+}

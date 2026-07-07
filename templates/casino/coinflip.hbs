@@ -1,0 +1,52 @@
+<div class="balatro-casino coinflip-game crt">
+    <div class="casino-header">
+        <h2 class="neon-text animate-pulse">
+            {{#if isViewer}}
+            SPECTATING {{activeUsername}}'S GAME
+            {{else}}
+            COIN FLIP
+            {{/if}}
+        </h2>
+        <div class="stakes-display">
+            <span class="label">STAKES:</span>
+            <span class="value chips-neon" id="coinflip-stakes-label">{{stakes}} DMG</span>
+        </div>
+        <div class="timer-display" style="text-align: center; margin-top: -10px; margin-bottom: 10px; font-family: 'Courier New', monospace; font-size: 0.9rem; font-weight: bold;">
+            TIME REMAINING: <span id="game-timer" style="color: #ffcc00; text-shadow: 0 0 5px #ffcc00; font-size: 1.1rem; font-weight: 900;">15s</span>
+        </div>
+        <div class="result-display" id="coinflip-result" style="text-align: center; margin-top: -5px; margin-bottom: 10px; min-height: 24px; font-family: 'Courier New', monospace; font-size: 1.1rem; font-weight: bold;">
+        </div>
+    </div>
+
+    <div class="game-body">
+        <!-- Coin Container -->
+        <div class="coin-container">
+            <div class="coin-3d" id="casino-coin">
+                <div class="coin-face heads">
+                    <div class="coin-design">H</div>
+                </div>
+                <div class="coin-face tails">
+                    <div class="coin-design">T</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Choice buttons -->
+        <div class="choices-container" id="coin-choices">
+            <button type="button" class="btn-casino btn-heads selected" data-choice="heads" {{#if isViewer}}disabled{{/if}}>HEADS</button>
+            <button type="button" class="btn-casino btn-tails" data-choice="tails" {{#if isViewer}}disabled{{/if}}>TAILS</button>
+        </div>
+
+        <!-- Post-win choices (Hidden initially) -->
+        <div class="post-win-container" id="coin-post-win" style="display:none; gap: 15px; width: 100%; max-width: 320px; margin-top: 15px;">
+            <button type="button" class="btn-casino btn-cashout" id="btn-coin-cashout" style="background:#00e600; color:#000; box-shadow:0 0 10px #00e600;" {{#if isViewer}}disabled{{/if}}>DEAL DAMAGE</button>
+            <button type="button" class="btn-casino btn-continue" id="btn-coin-continue" style="background:#ff00a0; box-shadow:0 0 10px #ff00a0;" {{#if isViewer}}disabled{{/if}}>GAMBLE MORE</button>
+        </div>
+    </div>
+
+    <div class="casino-footer">
+        <button type="button" class="btn-spin neon-btn" id="btn-play-coinflip" {{#if isViewer}}disabled style="border-color: rgba(255,255,255,0.1); color: rgba(255,255,255,0.15); cursor: not-allowed; box-shadow: none; text-shadow: none;"{{/if}}>
+            {{#if isViewer}}SPECTATING{{else}}FLIP COIN{{/if}}
+        </button>
+    </div>
+</div>

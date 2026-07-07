@@ -1,0 +1,41 @@
+{
+    "id": "fantik-automations",
+    "title": "Fantik's Automations",
+    "description": "A standalone automation framework for dnd5e. No socketlib, no midi-qol: automations run entirely on the acting player's client and never require a GM to be online. Includes the Gambler's Blade casino automation.",
+    "version": "0.3.4",
+    "authors": [
+        {
+            "name": "Fantik"
+        }
+    ],
+    "compatibility": {
+        "minimum": "13",
+        "verified": "14"
+    },
+    "relationships": {
+        "systems": [
+            {
+                "id": "dnd5e",
+                "type": "system",
+                "compatibility": {
+                    "minimum": "5.0.0"
+                }
+            }
+        ]
+    },
+    "esmodules": [
+        "scripts/module.js"
+    ],
+    "styles": [
+        "styles/casino.css",
+        "styles/automations.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "socket": true
+}
