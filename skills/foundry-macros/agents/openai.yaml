@@ -1,0 +1,4 @@
+interface:
+  display_name: "Foundry-макроси"
+  short_description: "Макроси у погодженому стилі Chromatic Orb"
+  default_prompt: "Використай $foundry-macros, щоб створити або вдосконалити макрос Foundry у погодженому стилі Chromatic Orb: компактна панель, приціл-курсор, картка з підказками кубиків і JB2A."

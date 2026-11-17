@@ -4,6 +4,12 @@ A standalone automation framework for the dnd5e system in Foundry VTT.
 
 Current supported platform: **Foundry VTT 14 / dnd5e 6.x**. Reload all player and GM clients after updating to 0.5.0.
 
+## Створення макросів із ChatGPT
+
+[Навичка та готовий запит для гравців](skills/foundry-macros/README.md) · [Пряме посилання на SKILL.md](https://github.com/funteaqueue/fantik-automations/blob/main/skills/foundry-macros/SKILL.md)
+
+Навичка містить приклад Chromatic Orb v3.1, правила компактного інтерфейсу й довідку API модуля. Надішліть посилання на SKILL.md у чат разом з описом потрібного макроса.
+
 ## Universal spell cards (API 4)
 
 `game.modules.get('fantik-automations').api.spellCards` now supports any spell, feature, or item without requiring its Item document. Pass the save ability (`str`, `dex`, `con`, `int`, `wis`, or `cha`), DC, and target tokens. Each recorded target gets its own GM save button. Damage cards retain the live native **Apply Damage** tray, with typed rolls and target UUIDs. No HP changes happen on cast, render, or save; application remains an explicit GM action. Save-only, damage-only, multi-target and untargeted cards are supported. Existing Toll the Dead cards still work through a legacy adapter.
