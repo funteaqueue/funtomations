@@ -7,6 +7,12 @@ import {initAutomationManager, AutomationManager} from './framework/manager.js';
 import {registerVision5eCompatSettings, initVision5eCompat} from './framework/compat/vision5e.js';
 import {registerTargetPromptSetting, initTurnTargetClearing} from './framework/target-picker.js';
 import {registerPlutoniumPasteSetting, initPlutoniumPaste} from './framework/plutonium-paste.js';
+import {initSpellCards, spellCards} from './framework/spell-cards.js';
+import {initSerpentTongue, serpentTongue} from './framework/serpent-tongue.js';
+import {initItemMacros, installItemMacroUseWrapper} from './framework/item-macros.js';
+import {initPartyMaps, partyMaps} from './framework/party-maps.js';
+import {initPublicAutomations} from './framework/public-automations.js';
+import {initAlternativeTokens, openAlternativeTokens} from './framework/alternative-tokens.js';
 import * as utils from './framework/utils.js';
 import {allAutomations} from './automations/_index.js';
 
@@ -21,8 +27,14 @@ Hooks.once('init', () => {
     registerVision5eCompatSettings();
     registerPlutoniumPasteSetting();
     initSockets();
+    initSpellCards();
+    initSerpentTongue();
     utils.initFrameworkRelays();
     initAutomationManager();
+    initItemMacros();
+    initPublicAutomations();
+    initPartyMaps();
+    initAlternativeTokens();
 
     for (const automation of registry.all()) {
         try {
@@ -34,6 +46,7 @@ Hooks.once('init', () => {
 });
 
 Hooks.once('ready', () => {
+    installItemMacroUseWrapper();
     initTriggers();
     initTurnTargetClearing();
     initVision5eCompat();
@@ -42,6 +55,10 @@ Hooks.once('ready', () => {
         registry,
         AutomationManager,
         sockets: {registerSocketHandler, emitToOthers},
+        spellCards,
+        serpentTongue,
+        partyMaps,
+        alternativeTokens: {open: openAlternativeTokens},
         utils
     };
     console.log(`${MODULE_ID} | Ready with ${registry.all().length} automation(s): ${registry.all().map(a => a.id).join(', ')}`);

@@ -1,0 +1,9 @@
+{
+  "name": "Зміїний язик — Serpent Tongue",
+  "type": "script",
+  "img": "icons/magic/poison/strike-vine-tendril-green.webp",
+  "scope": "global",
+  "command": "// Зміїний язик — Serpent Tongue. Foundry VTT 14 / dnd5e 5.3.3 and 6.x.\n// Fantik Automations owns persistent card buttons and timed poison cleanup.\nconst serpent = game.modules.get('fantik-automations')?.api?.serpentTongue;\nif (!serpent?.use) return ui.notifications.warn('Онови Fantik Automations до 0.4.1+ та перезавантаж клієнти.');\nawait serpent.use({\n    item: typeof item !== 'undefined' ? item : undefined,\n    activity: typeof activity !== 'undefined' ? activity : undefined\n});\n",
+  "folder": null,
+  "flags": {}
+}

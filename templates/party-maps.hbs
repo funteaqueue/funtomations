@@ -1,0 +1,27 @@
+<section class="fpm-body">
+    <div class="fpm-viewport">
+        {{#if active}}<img src="{{active.path}}" alt="{{active.name}}" draggable="false">{{else}}
+        <div class="fpm-empty"><i class="fa-regular fa-map"></i><p>{{#if team}}Додайте першу мапу{{else}}Ваші мапи — в одному місці{{/if}}</p>
+        {{#if team}}<button type="button" data-upload data-mutation>Завантажити мапу</button>{{else}}<button type="button" data-open-settings>Обрати команду</button>{{/if}}</div>
+        {{/if}}
+    </div>
+    <button class="fpm-corner fpm-toggle" type="button" data-menu aria-label="Бібліотека мап" aria-expanded="{{menuOpen}}" title="Бібліотека мап"><i class="fa-solid fa-border-all"></i></button>
+    <button class="fpm-corner fpm-close" type="button" data-close aria-label="Закрити мапу" title="Закрити · Esc / M"><i class="fa-solid fa-xmark"></i></button>
+    {{#if team}}<input data-file type="file" accept="image/png,image/jpeg,image/webp" hidden>{{/if}}
+    {{#if menuOpen}}<aside class="fpm-popover" aria-label="Бібліотека мап">
+        <header><strong>{{#if settingsOpen}}Налаштування{{else}}Мапи{{/if}}</strong><button type="button" data-settings aria-label="Налаштування" title="Команда та налаштування"><i class="fa-solid fa-{{#if settingsOpen}}arrow-left{{else}}gear{{/if}}"></i></button></header>
+        {{#if settingsOpen}}
+        <div class="fpm-settings">
+            <label>Команда<select data-team data-mutation><option value="">Оберіть команду</option>{{#each teams}}<option value="{{id}}" {{#if selected}}selected{{/if}}>{{name}}</option>{{/each}}</select></label>
+            <div class="fpm-create"><input data-name maxlength="80" placeholder="Нова команда" aria-label="Назва нової команди"><button type="button" data-create data-mutation aria-label="Створити команду" title="Створити команду"><i class="fa-solid fa-plus"></i></button></div>
+            {{#if team}}<button class="fpm-upload" type="button" data-upload data-mutation><i class="fa-solid fa-arrow-up-from-bracket"></i><span>Завантажити</span><small>до 10 МБ</small></button>{{/if}}
+            {{#if active}}<button type="button" data-fit>Скинути масштаб</button>{{/if}}
+            {{#if canRemove}}<button type="button" data-remove data-mutation>Прибрати поточну мапу</button>{{/if}}
+        </div>
+        {{else}}
+        <div class="fpm-list">{{#each maps}}<button type="button" class="fpm-map {{#if selected}}is-selected{{/if}}" data-map-id="{{id}}" data-mutation aria-pressed="{{selected}}"><img src="{{path}}" alt="" loading="lazy"><span>{{name}}</span>{{#if selected}}<i class="fa-solid fa-check"></i>{{/if}}</button>{{else}}<p class="fpm-muted">Мап поки немає</p>{{/each}}</div>
+        {{#if team}}<button class="fpm-upload" type="button" data-upload data-mutation><i class="fa-solid fa-arrow-up-from-bracket"></i><span>Завантажити</span><small>до 10 МБ</small></button>{{/if}}
+        {{/if}}
+    </aside>{{/if}}
+    <span class="fpm-status" role="status" aria-live="polite">{{#if busy}}Завантаження…{{/if}}</span>
+</section>

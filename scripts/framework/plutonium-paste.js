@@ -30,7 +30,7 @@ const URL_PATTERN = /https?:\/\/(?:www\.)?5e\.tools\/([a-z][\w-]*\.html)#([^\s"'
 export function registerPlutoniumPasteSetting() {
     game.settings.register(MODULE_ID, SETTING_ID, {
         name: 'Plutonium: paste 5e.tools links to import',
-        hint: 'Paste a 5e.tools link (Ctrl+V) over an actor sheet or the sidebar to import it via Plutonium. Requires the Plutonium module.',
+        hint: 'Paste a 5e.tools link (Ctrl+V) over an actor sheet or the sidebar to import it via Plutonium. Requires the Plutonium module. Automatically disabled while 1d20-ua-plutonium is active.',
         scope: 'client',
         config: true,
         type: Boolean,
@@ -39,6 +39,8 @@ export function registerPlutoniumPasteSetting() {
 }
 
 export function initPlutoniumPaste() {
+    // The translation module owns paste imports when enabled, avoiding duplicates.
+    if (game.modules.get('1d20-ua-plutonium')?.active) return;
     if (!game.modules.get('plutonium')?.active) return;
 
     document.addEventListener('paste', event => {

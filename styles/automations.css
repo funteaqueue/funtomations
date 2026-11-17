@@ -1,3 +1,17 @@
+/* Item macro management uses ordinary native menu rows with single-element icons. */
+#context-menu .fantik-item-macro-entry.fantik-item-macro-active {
+    color:#51b986; background:rgba(46,163,107,.13); box-shadow:inset 3px 0 #51b986;
+}
+.fantik-item-macro-editor .fantik-macro-status { margin:0; font-size:13px; }
+.fantik-item-macro-editor .fantik-macro-status.is-active { color:#51b986; }
+.fantik-item-macro-editor .fantik-macro-enabled { display:flex; align-items:center; gap:8px; }
+.fantik-item-macro-editor .fantik-macro-code-label { display:flex; flex-direction:column; gap:8px; }
+.fantik-item-macro-editor textarea {
+    width:100%; min-height:310px; resize:vertical; white-space:pre;
+    font:13px/1.5 monospace; tab-size:2; padding:10px;
+}
+.fantik-item-macro-editor .hint { margin:0; font-size:12px; opacity:.8; }
+
 /* ---------------------------------------------- */
 /*  Manage Automations window                     */
 /* ---------------------------------------------- */
@@ -396,3 +410,55 @@ li.context-item.fantik-automations-manage-item {
     color: #2ea36b;
     font-weight: bold;
 }
+
+/* Public macro catalogue */
+.fantik-automation-manager .fam-public-code-label { display:grid; gap:6px; font-size:12px; }
+.fantik-automation-manager .fam-public-code { width:100%; height:230px; resize:vertical; font:12px/1.5 monospace; white-space:pre; overflow:auto; }
+.fantik-automation-manager .fam-public-row { display:flex; align-items:center; gap:10px; width:100%; height:auto; padding:4px; border:0; background:transparent; text-align:left; white-space:normal; color:inherit; }
+.fantik-automation-manager .fam-public-row .fam-info { min-width:0; flex:1; }
+.fantik-automation-manager .fam-public-row .fam-name { overflow-wrap:anywhere; }
+.fantik-automation-manager .fam-row[hidden] { display:none; }
+
+.fantik-alternative-tokens { --fat-panel:#24272c; --fat-line:#ffffff17; }
+.fantik-alternative-tokens .window-content { background:#1b1e22; color:#e9edf1; padding:16px; }
+.fantik-alternative-tokens .fat-body { display:grid; gap:12px; font:13px/1.4 Arial,sans-serif; }
+.fantik-alternative-tokens .fat-body button { min-height:34px; border:1px solid var(--fat-line); border-radius:8px; background:#ffffff06; color:inherit; font:inherit; box-shadow:none; }
+.fantik-alternative-tokens .fat-body button:hover { background:#ffffff12; border-color:#ffffff35; box-shadow:none; }
+.fantik-alternative-tokens .fat-body button:focus-visible { outline:2px solid #aec4d9; outline-offset:2px; }
+.fantik-alternative-tokens .fat-toolbar { display:flex; align-items:center; gap:8px; }
+.fantik-alternative-tokens .fat-toolbar > span,.fantik-alternative-tokens .fat-toolbar input { flex:1; min-width:0; }
+.fantik-alternative-tokens .fat-toolbar button { width:auto; flex:0 0 auto; padding:0 11px; }
+.fantik-alternative-tokens .fat-library-header { color:#aeb6bf; font-size:12px; }
+.fantik-alternative-tokens .fat-library-header button { min-height:30px; border:0; }
+.fantik-alternative-tokens .fat-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(106px,1fr)); gap:10px; max-height:360px; overflow-y:auto; padding:2px; }
+.fantik-alternative-tokens .fat-tile { min-width:0; position:relative; }
+.fantik-alternative-tokens .fat-image { position:relative; display:flex; flex-direction:column; width:100%; height:auto; gap:0; padding:0; overflow:hidden; text-align:left; }
+.fantik-alternative-tokens .fat-thumbnail { display:grid; place-items:center; width:100%; height:112px; padding:9px; background:radial-gradient(circle,#39414a66,transparent); }
+.fantik-alternative-tokens .fat-thumbnail img { width:100%; height:94px; object-fit:contain; border:0; }
+.fantik-alternative-tokens .fat-image-name { width:100%; padding:8px 9px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:12px; background:#ffffff04; }
+.fantik-alternative-tokens .fat-image.is-active { border-color:#68b69c; box-shadow:0 0 0 1px #68b69c44; }
+.fantik-alternative-tokens .fat-image > i { position:absolute; top:7px; right:7px; color:#a8e5ce; background:#213b32; border-radius:50%; padding:5px; font-size:10px; }
+.fantik-alternative-tokens .fat-tile-actions { display:flex; gap:5px; margin-top:5px; }
+.fantik-alternative-tokens .fat-tile-actions button { flex:1; min-height:28px; font-size:11px; }
+.fantik-alternative-tokens .fat-hint { color:#aeb6bf; font-size:12px; margin:0; }
+.fantik-alternative-tokens .fat-editor { display:grid; gap:10px; }
+.fantik-alternative-tokens input,.fantik-alternative-tokens select { background:var(--fat-panel); color:#e9edf1; border:1px solid var(--fat-line); border-radius:7px; height:36px; padding:6px 10px; font:inherit; }
+.fantik-alternative-tokens .fat-draft-preview { display:grid; place-items:center; height:130px; background:var(--fat-panel); border:1px dashed #ffffff25; border-radius:10px; }
+.fantik-alternative-tokens .fat-draft-preview img { max-width:100%; height:110px; object-fit:contain; border:0; }
+.fantik-alternative-tokens .fat-draft-preview > i { font-size:32px; color:#8593a2; }
+.fantik-alternative-tokens .fat-empty { display:flex; align-items:center; flex-direction:column; gap:14px; padding:20px 10px; background:linear-gradient(150deg,#ffffff05,transparent); border:1px dashed #ffffff1c; border-radius:12px; }
+.fantik-alternative-tokens .fat-current-preview { width:96px; height:96px; display:grid; place-items:center; background:#ffffff05; border-radius:50%; }
+.fantik-alternative-tokens .fat-current-preview img { width:84px; height:84px; object-fit:contain; border:0; }
+.fantik-alternative-tokens .fat-current-preview > i { font-size:30px; color:#8593a2; }
+.fantik-alternative-tokens .fat-empty strong { font-size:14px; font-weight:500; }
+.fantik-alternative-tokens .fat-footer { display:flex; gap:8px; flex-wrap:wrap; }
+.fantik-alternative-tokens .fat-footer button { flex:1 1 auto; width:auto; padding:0 12px; }
+.fantik-alternative-tokens .fat-body button.fat-primary { background:#dbe4ec; border-color:transparent; color:#1b232b; font-weight:600; }
+.fantik-alternative-tokens .fat-body button.fat-primary:hover { background:#f0f4f8; }
+.fantik-alternative-tokens .fat-body button.fat-text-button { width:auto; justify-self:center; padding:0 8px; min-height:26px; border:0; background:transparent; color:#aebbc9; font-size:12px; }
+#token-hud .fantik-alternatives-hud { pointer-events:auto; }
+
+.fantik-alternative-tokens .fat-path-row { flex-wrap:nowrap; gap:6px; }
+.fantik-alternative-tokens .fat-path-row button { width:36px; height:36px; padding:0; display:grid; place-items:center; }
+.fantik-alternative-tokens .fat-body button.fat-quick-upload { background:var(--fqu-accent,#e94560); border-color:transparent; color:#fff; }
+.fantik-alternative-tokens .fat-body button.fat-quick-upload:hover { background:#ff5e78; }

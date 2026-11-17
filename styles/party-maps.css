@@ -1,0 +1,43 @@
+.fantik-party-maps {
+    position: fixed !important; inset: 0 !important; width: 100vw !important; height: 100dvh !important;
+    max-width: none; max-height: none; margin: 0; padding: 0; border: 0; border-radius: 0;
+    background: #181a1d; box-shadow: none; color: #eee; z-index: 100;
+    font-family: Arial, sans-serif; font-size: 13px;
+}
+.fantik-party-maps .fpm-body { position: absolute; inset: 0; overflow: hidden; }
+.fantik-party-maps .fpm-viewport { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; touch-action: none; cursor: grab; }
+.fantik-party-maps .fpm-viewport:active { cursor: grabbing; }
+.fantik-party-maps .fpm-viewport > img { width: 100%; height: 100%; object-fit: contain; border: 0; border-radius: 0; user-select: none; pointer-events: none; }
+.fantik-party-maps button { color: #eee; background: #ffffff09; border: 1px solid #ffffff15; border-radius: 8px; box-shadow: none; cursor: pointer; font: inherit; transition: background .15s; }
+.fantik-party-maps button:hover { background: #ffffff20; box-shadow: none; }
+.fantik-party-maps button:focus-visible { outline: 2px solid #c1cbd5; outline-offset: 3px; }
+.fantik-party-maps button:disabled { opacity: .5; cursor: wait; }
+.fantik-party-maps button i { margin: 0; pointer-events: none; }
+.fantik-party-maps .fpm-corner { position: absolute; top: 20px; width: 38px; height: 38px; padding: 0; display: grid; place-items: center; background: #24272be8; border-color: #ffffff20; backdrop-filter: blur(16px); box-shadow: 0 2px 12px #0002; }
+.fantik-party-maps .fpm-toggle { left: 20px; }
+.fantik-party-maps .fpm-close { right: 20px; font-size: 18px; }
+.fantik-party-maps .fpm-popover { position: absolute; left: 20px; top: 68px; width: 288px; max-width: calc(100vw - 40px); max-height: calc(100dvh - 90px); display: flex; flex-direction: column; gap: 10px; padding: 12px; border: 1px solid #ffffff1a; border-radius: 12px; background: #24272bf5; backdrop-filter: blur(20px); box-shadow: 0 12px 40px #0004; }
+.fantik-party-maps .fpm-popover header { display: flex; align-items: center; justify-content: space-between; padding-left: 4px; }
+.fantik-party-maps .fpm-popover header strong { font-size: 14px; font-weight: 500; }
+.fantik-party-maps .fpm-popover header button { width: 30px; height: 30px; padding: 0; border: 0; background: transparent; }
+.fantik-party-maps .fpm-list { overflow-y: auto; min-height: 0; display: grid; gap: 4px; }
+.fantik-party-maps .fpm-map { width: 100%; min-height: 48px; padding: 7px; display: flex; align-items: center; gap: 10px; border-color: transparent; background: transparent; text-align: left; }
+.fantik-party-maps .fpm-map.is-selected { background: #ffffff12; }
+.fantik-party-maps .fpm-map img { width: 40px; height: 30px; object-fit: cover; border: 0; border-radius: 4px; }
+.fantik-party-maps .fpm-map span { flex: 1; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.fantik-party-maps .fpm-map i { font-size: 11px; color: #d3d8dd; }
+.fantik-party-maps .fpm-upload { display: flex; align-items: center; gap: 9px; width: 100%; padding: 9px; flex-shrink: 0; }
+.fantik-party-maps .fpm-upload small { margin-left: auto; font-size: 10px; color: #aeb3b9; }
+.fantik-party-maps .fpm-settings { display: grid; gap: 12px; overflow-y: auto; }
+.fantik-party-maps .fpm-settings label { display: grid; gap: 6px; font-size: 11px; color: #bfc3c8; }
+.fantik-party-maps .fpm-settings input, .fantik-party-maps .fpm-settings select { width: 100%; min-width: 0; height: 34px; border: 1px solid #ffffff20; border-radius: 6px; background: #303337; color: #eee; font: inherit; padding: 6px; }
+.fantik-party-maps .fpm-settings button { min-height: 32px; }
+.fantik-party-maps .fpm-create { display: flex; gap: 6px; }
+.fantik-party-maps .fpm-create button { width: 34px; flex-shrink: 0; }
+.fantik-party-maps .fpm-empty { text-align: center; color: #acb2b9; padding: 24px; cursor: default; }
+.fantik-party-maps .fpm-empty > i { font-size: 32px; opacity: .5; }
+.fantik-party-maps .fpm-empty button { padding: 10px 16px; }
+.fantik-party-maps .fpm-muted { color: #acb2b9; padding: 8px; }
+.fantik-party-maps .fpm-status { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: #24272bea; border-radius: 8px; padding: 8px 14px; pointer-events: none; }
+.fantik-party-maps .fpm-status:empty { display: none; }
+.fantik-party-maps [hidden] { display: none !important; }

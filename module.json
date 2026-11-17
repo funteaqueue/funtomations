@@ -1,15 +1,15 @@
 {
     "id": "fantik-automations",
     "title": "Fantik's Automations",
-    "description": "A standalone automation framework for dnd5e. No socketlib, no midi-qol: automations run entirely on the acting player's client and never require a GM to be online. Includes the Gambler's Blade casino automation.",
-    "version": "0.3.4",
+    "description": "A standalone automation framework for dnd5e 6 / Foundry 14. Universal spell cards, shared attack chains, GM-only hit hints, typed damage/healing controls and optional GM-assisted wound checks. No socketlib or midi-qol.",
+    "version": "0.8.4",
     "authors": [
         {
             "name": "Fantik"
         }
     ],
     "compatibility": {
-        "minimum": "13",
+        "minimum": "14",
         "verified": "14"
     },
     "relationships": {
@@ -18,7 +18,7 @@
                 "id": "dnd5e",
                 "type": "system",
                 "compatibility": {
-                    "minimum": "5.0.0"
+                    "minimum": "6.0.0"
                 }
             }
         ]
@@ -28,7 +28,8 @@
     ],
     "styles": [
         "styles/casino.css",
-        "styles/automations.css"
+        "styles/automations.css",
+        "styles/party-maps.css"
     ],
     "languages": [
         {

@@ -1,6 +1,18 @@
 import {MODULE_ID} from './constants.js';
 
 /**
+ * Names an item can be matched by: its current name plus the English name that
+ * 1d20-ua-plutonium stores when it translates a Plutonium import to Ukrainian.
+ * @param {Item} item
+ * @returns {string[]}
+ */
+function matchableNames(item) {
+    return [item?.name, item?.flags?.['1d20-ua-plutonium']?.nameEn]
+        .filter(name => typeof name === 'string' && name)
+        .map(name => name.toLowerCase());
+}
+
+/**
  * An automation definition:
  * {
  *     id: 'gamblersBlade',                       // unique key, used for settings and item flags
@@ -115,9 +127,12 @@ class AutomationRegistry {
      * @returns {boolean}
      */
     matchesItemName(automation, item) {
-        const itemName = (item?.name ?? '').toLowerCase();
+        const itemNames = matchableNames(item);
         const names = automation.match?.itemNames ?? [];
-        return names.some(name => itemName.includes(name.toLowerCase().trim()));
+        return names.some(name => {
+            const needle = name.toLowerCase().trim();
+            return itemNames.some(itemName => itemName.includes(needle));
+        });
     }
 
     /**
@@ -190,7 +205,7 @@ class AutomationRegistry {
     findForActor(actor) {
         if (!actor) return [];
         const boundIds = actor.getFlag?.(MODULE_ID, 'automations') ?? [];
-        const ownedNames = actor.items.map(item => (item.name ?? '').toLowerCase());
+        const ownedNames = actor.items.flatMap(matchableNames);
         return this.all().filter(automation => {
             if (!this.isEnabled(automation.id)) return false;
             if (boundIds.includes(automation.id)) return true;

@@ -1,0 +1,23 @@
+<section class="fat-body">
+{{#if multiple}}<select class="fat-token-select" data-token aria-label="Токен на сцені"><option value="">Оберіть токен на сцені</option>{{#each tokens}}<option value="{{id}}" {{#if selected}}selected{{/if}}>{{name}}</option>{{/each}}</select>{{/if}}
+{{#unless hasToken}}<p class="fat-hint">{{#if multiple}}Оберіть токен для застосування.{{else}}Токена на цій сцені немає. Можна редагувати бібліотеку.{{/if}}</p>{{/unless}}
+{{#if editor}}
+<div class="fat-editor">
+    <div class="fat-draft-preview">{{#if editor.src}}<img src="{{editor.src}}" alt="Прев’ю">{{else}}<i class="fa-regular fa-image"></i>{{/if}}</div>
+    <input name="imageName" value="{{editor.name}}" maxlength="80" placeholder="Назва зображення" aria-label="Назва зображення">
+    <div class="fat-toolbar fat-path-row"><input name="imageSrc" value="{{editor.src}}" placeholder="Шлях або URL" aria-label="Шлях до зображення"><button type="button" data-browse title="Вибрати або завантажити" aria-label="Вибрати або завантажити"><i class="fa-solid fa-folder-open"></i></button>{{#if quickUpload}}<button class="fat-quick-upload" type="button" data-quick title="Quick Upload" aria-label="Quick Upload"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i></button>{{/if}}</div>
+    <footer class="fat-toolbar"><button class="fat-primary" type="button" data-save>Зберегти</button><button type="button" data-cancel>Скасувати</button></footer>
+</div>
+{{else}}
+{{#if images.length}}
+<header class="fat-toolbar fat-library-header"><span>Зображення</span><button type="button" data-manage class="{{#if manage}}is-active{{/if}}" title="Керувати зображеннями" aria-label="Керувати зображеннями"><i class="fa-solid fa-sliders"></i></button></header>
+<div class="fat-grid">{{#each images}}<div class="fat-tile"><button type="button" data-apply="{{id}}" class="fat-image {{#if active}}is-active{{/if}}" {{#unless @root.hasToken}}disabled{{/unless}} title="{{name}}"><span class="fat-thumbnail"><img src="{{src}}" alt="" loading="lazy"></span><span class="fat-image-name">{{name}}</span>{{#if active}}<i class="fa-solid fa-check"></i>{{/if}}</button>{{#if @root.manage}}{{#unless standard}}<div class="fat-tile-actions"><button type="button" data-edit="{{id}}" aria-label="Редагувати {{name}}"><i class="fa-solid fa-pen"></i></button><button type="button" data-delete="{{id}}" aria-label="Видалити {{name}}"><i class="fa-solid fa-trash"></i></button></div>{{/unless}}{{/if}}</div>{{/each}}</div>
+{{else}}
+<div class="fat-empty">
+    <div class="fat-current-preview">{{#if currentSrc}}<img src="{{currentSrc}}" alt="Поточний токен">{{else}}<i class="fa-regular fa-images"></i>{{/if}}</div>
+    <strong>Додайте альтернативний вигляд</strong>
+</div>
+{{/if}}
+<footer class="fat-footer"><button class="fat-primary" type="button" data-add><i class="fa-solid fa-plus"></i> Додати зображення</button>{{#if quickUpload}}<button type="button" data-quick><i class="fa-solid fa-cloud-arrow-up"></i> Quick Upload</button>{{/if}}</footer>
+{{/if}}
+</section>
