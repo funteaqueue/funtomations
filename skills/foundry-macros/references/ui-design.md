@@ -30,7 +30,7 @@ Copy relevant code into the new task, rename ids/locks/flags/effect names, and a
 
 ## Visual language
 
-- Dark charcoal card and panel (`#202326`), off-white text (`#f4efe5`), muted gold borders/accent (`#81745d`, `#c6b48d`), warm gold primary action (`#d4bf8f`). Use an elemental/spell accent where meaningful while keeping the shared frame consistent.
+- Use a readable, restrained interface that fits the scene and spell without breaking immersion. Choose colors appropriate to the macro and surrounding Foundry interface. The screenshots illustrate compact layout and hierarchy, not a required palette; gold accents are not a default requirement.
 - Thin borders, approximately 9–10 px corner radius, 12–14 px padding. Serif spell heading around 18–20 px; clean sans-serif controls around 11–12 px. Secondary metadata around 9–10 px. Preserve contrast and focus visibility.
 - Card must fit a 250–270 px chat column. Panel is about 390 px wide, constrained to the viewport, draggable, and leaves the map usable. Keep long target names readable.
 - Small spell-specific artwork above the title, not a large banner or a paragraph of flavor. Use encoded SVG `<img>` for code-native art. Chromatic Orb's artwork is a **multicolored faceted sphere**, not a diamond and not recolored for the selected element. Other spells get their own appropriate artwork.
@@ -95,7 +95,7 @@ Inspect actual generated UI at narrow chat/panel widths, not a separate mock des
 
 Що наслідувати:
 
-- Темне тло, тонкі нейтральні рамки, теплий золотистий акцент для вибраного стану; читабельний текст без зайвих декоративних пояснень.
+- Стриманий, читабельний інтерфейс, що не вибиває із занурення у гру. Кольори підбирайте до конкретного макроса й оточення; золотисті акценти на скриншотах — лише приклад, не бажаний стиль за замовчуванням.
 - Назва й короткий лічильник цілей зліва, компактні кнопки налаштувань і закриття справа.
 - Пов’язані поля в одному рядку; перемикачі поруч із короткими підписами, без окремої великої секції для кожного параметра.
 - Завада / нормальна / перевага як один сегментований рядок з однозначним вибраним станом.
