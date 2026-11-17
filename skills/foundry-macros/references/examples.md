@@ -8,7 +8,7 @@ JSON поруч із JS можна імпортувати у Script Macro чер
 
 ## Інші приклади в репозиторії
 
-[Каталог macros](https://github.com/funteaqueue/fantik-automations/tree/main/macros):
+[Каталог macros](https://github.com/funteaqueue/funtomations/tree/main/macros):
 
 - **Chromatic Orb chain** — актуальний приклад ланцюжка атак; перед використанням прочитайте його README про застосування шкоди до наступного стрибка.
 - **Portent** — приклад компактної панелі зі збереженням кубиків і Dice So Nice. Вибирає призначеного персонажа, а не виділений токен; це спеціалізований приклад стану, не шаблон вибору заклинача.

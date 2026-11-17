@@ -6,7 +6,7 @@ Current supported platform: **Foundry VTT 14 / dnd5e 6.x**. Reload all player an
 
 ## Створення макросів із ChatGPT
 
-[Навичка та готовий запит для гравців](skills/foundry-macros/README.md) · [Пряме посилання на SKILL.md](https://github.com/funteaqueue/fantik-automations/blob/main/skills/foundry-macros/SKILL.md)
+[Навичка та готовий запит для гравців](skills/foundry-macros/README.md) · [Пряме посилання на SKILL.md](https://github.com/funteaqueue/funtomations/blob/main/skills/foundry-macros/SKILL.md)
 
 Навичка містить приклад Chromatic Orb v3.1, правила компактного інтерфейсу й довідку API модуля. Надішліть посилання на SKILL.md у чат разом з описом потрібного макроса.
 

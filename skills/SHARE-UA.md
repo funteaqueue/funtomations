@@ -9,7 +9,7 @@
 
 Ділюся навичкою для створення макросів під Foundry VTT 14 / dnd5e 6.x. Усередині — правила компактного українського інтерфейсу, приклад Chromatic Orb, кидки з Dice So Nice, вибір цілей і довідка кастомних функцій нашого модуля.
 
-Модуль: https://github.com/funteaqueue/fantik-automations
+Модуль: https://github.com/funteaqueue/funtomations
 
 Приклад запиту: «Використай foundry-macros. Створи макрос для [назва/механіка]. Потрібні .js і JSON для імпорту. Використай компактний інтерфейс Chromatic Orb та доступні функції Fantik’s Automations; збережи ручний режим без модуля».
 

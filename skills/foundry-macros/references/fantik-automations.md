@@ -1,6 +1,6 @@
 # Fantik Automations integration
 
-Source snapshot inspected 2026-11-17: [fantik-automations 0.8.4](https://github.com/funteaqueue/fantik-automations), Foundry 14 / dnd5e 6.x. Source: `scripts/module.js` and `scripts/framework/` in that repository. Tests cover mocked behavior and browser DOM interactions; this is not a claim of end-to-end multiplayer validation. Reinspect installed code when versions change.
+Source snapshot inspected 2026-11-17: [fantik-automations 0.8.4](https://github.com/funteaqueue/funtomations), Foundry 14 / dnd5e 6.x. Source: `scripts/module.js` and `scripts/framework/` in that repository. Tests cover mocked behavior and browser DOM interactions; this is not a claim of end-to-end multiplayer validation. Reinspect installed code when versions change.
 
 ## Public API and optional capabilities
 

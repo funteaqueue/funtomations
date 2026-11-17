@@ -13,17 +13,17 @@ Use these instructions for the user's macro request; no local skill installation
 
 Direct source links for web readers:
 
-- [UI and interaction](https://raw.githubusercontent.com/funteaqueue/fantik-automations/main/skills/foundry-macros/references/ui-design.md)
-- [Module API and limitations](https://raw.githubusercontent.com/funteaqueue/fantik-automations/main/skills/foundry-macros/references/fantik-automations.md)
-- [Example selection](https://raw.githubusercontent.com/funteaqueue/fantik-automations/main/skills/foundry-macros/references/examples.md)
-- [Chromatic Orb v3.1 source](https://raw.githubusercontent.com/funteaqueue/fantik-automations/main/skills/foundry-macros/assets/chromatic-orb.js)
-- [Implementation details](https://raw.githubusercontent.com/funteaqueue/fantik-automations/main/skills/foundry-macros/references/implementation.md)
-- [Dice So Nice lifecycle](https://raw.githubusercontent.com/funteaqueue/fantik-automations/main/skills/foundry-macros/references/dice-lifecycle.md)
+- [UI and interaction](https://raw.githubusercontent.com/funteaqueue/funtomations/main/skills/foundry-macros/references/ui-design.md)
+- [Module API and limitations](https://raw.githubusercontent.com/funteaqueue/funtomations/main/skills/foundry-macros/references/fantik-automations.md)
+- [Example selection](https://raw.githubusercontent.com/funteaqueue/funtomations/main/skills/foundry-macros/references/examples.md)
+- [Chromatic Orb v3.1 source](https://raw.githubusercontent.com/funteaqueue/funtomations/main/skills/foundry-macros/assets/chromatic-orb.js)
+- [Implementation details](https://raw.githubusercontent.com/funteaqueue/funtomations/main/skills/foundry-macros/references/implementation.md)
+- [Dice So Nice lifecycle](https://raw.githubusercontent.com/funteaqueue/funtomations/main/skills/foundry-macros/references/dice-lifecycle.md)
 
 ## Module and examples
 
-Optional companion: [Fantik’s Automations](https://github.com/funteaqueue/fantik-automations).
-Read its [README](https://github.com/funteaqueue/fantik-automations/blob/main/README.md) for installation and player features, and [references/fantik-automations.md](references/fantik-automations.md) for the versioned macro API. Module version and API version are different numbers: this package documents module 0.8.4 / spellCards API 5.
+Optional companion: [Fantik’s Automations](https://github.com/funteaqueue/funtomations).
+Read its [README](https://github.com/funteaqueue/funtomations/blob/main/README.md) for installation and player features, and [references/fantik-automations.md](references/fantik-automations.md) for the versioned macro API. Module version and API version are different numbers: this package documents module 0.8.4 / spellCards API 5.
 Read [references/examples.md](references/examples.md) to choose a suitable example and understand which parts are current or historical. Do not treat every bundled macro as a fully compliant template.
 
 ## Default design and interaction
