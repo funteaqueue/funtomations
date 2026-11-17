@@ -5,7 +5,7 @@ description: Create, improve, or troubleshoot Foundry VTT JavaScript macros, esp
 
 # Foundry macros
 
-Build usable Script macros and importable Macro JSON. This is a portable community skill for Foundry VTT 14 / dnd5e 6.x. Current requests take precedence. It does not authorize installing modules, changing world settings, or editing unrelated module code.
+Build usable JavaScript Script macros. This is a portable community skill for Foundry VTT 14 / dnd5e 6.x. Current requests take precedence. It does not authorize installing modules, changing world settings, or editing unrelated module code.
 
 ## Reading this skill from a chat link
 
@@ -94,13 +94,7 @@ Prefer the existing standard Apply picker over new custom damage/healing buttons
 
 ## Deliver and verify
 
-Prefer a self-contained `.js` plus importable `.json` under the current task's output directory unless the user chooses another location. Build both from the same command text with:
-
-```text
-python <skill-dir>/scripts/package_macro.py <macro.js> --name "Macro name" [--output <macro.json>]
-```
-
-This script serializes the macro; it does not verify its JavaScript or Foundry compatibility. Do not write directly to live world database files. If live import is not part of the task, provide links and brief import/paste instructions without claiming installation.
+Return only the complete JavaScript macro, as a single `.js` file or one JavaScript code block ready to paste into a Foundry Script macro. Do not generate or attach an importable JSON, JSON wrapper, or a second copy of the code in another format. Do not run the JSON packaging helper for ordinary delivery. Clarifying questions remain appropriate before implementation when required information is missing. Do not write directly to live world database files or claim installation unless it actually occurred.
 
 Verify behavior that changed: selected-token priority, assigned-character fallback, multiple-token caster choice, consistent synthetic-actor data, caster stability during target selection, boundary levels, repeated targets, retained/dropped dice, critical damage, cancellation, scene teardown, and lock cleanup where relevant. For dice integration, check that no result card appears before completion, every evaluated die is retained, and the message does not trigger a duplicate throw. For visual changes, inspect the actual generated chat markup at narrow width in a browser, and check the target Foundry sanitizer when embedding media. Mock tests and preview screenshots are not a live Foundry execution.
 
@@ -108,4 +102,4 @@ For resource-dependent macros, verify that selected consumption deducts exactly 
 
 For target pickers, verify that **«Без цілі»** completes without a target, including after partial selection or a pending target-state lookup, produces no unintended creature effects or target-bound controls, and respects the consumption checkbox without duplicate spending.
 
-The historical Eldritch example's regression harness is available as `node <skill-dir>/scripts/test_eldritch_example.cjs`; use it when adapting relevant logic, not as proof for unrelated mechanics. Missing animation assets should not lose the roll results. Regenerate JSON after the last code change and report material limitations accurately.
+The historical Eldritch example's regression harness is available as `node <skill-dir>/scripts/test_eldritch_example.cjs`; use it when adapting relevant logic, not as proof for unrelated mechanics. Missing animation assets should not lose the roll results. Verify the final JavaScript after the last code change.

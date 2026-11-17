@@ -49,4 +49,4 @@ For sequential effects, inspect the installed Sequencer lifecycle: a persistent 
 
 Use the real macro wrapper shape where possible: Foundry 14 wraps the command in a block inside an AsyncFunction with `speaker`, `actor`, `token`, `character`, and `scope` parameters. A mock must not invent APIs that the target version lacks—the first mock incorrectly supplied `game.user.updateTokenTargets` and missed a live failure.
 
-For changes to the picker or rolls, cover repeated clicks, undo, cancel, scene change, invalid inputs, dropped critical dice, and injected errors during cleanup. For styling, generate a preview from actual macro markup, not a separately recreated design. Compare packaged JSON's `command` with the final JS source.
+For changes to the picker or rolls, cover repeated clicks, undo, cancel, scene change, invalid inputs, dropped critical dice, and injected errors during cleanup. For styling, generate a preview from actual macro markup, not a separately recreated design. Deliver only the final JavaScript source, without a JSON export.
