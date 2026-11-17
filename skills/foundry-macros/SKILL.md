@@ -28,6 +28,9 @@ Read [references/examples.md](references/examples.md) to choose a suitable examp
 
 ## Default design and interaction
 
+Visual references supplied by the user: [main panel](assets/chromatic-orb-panel.png) and [expanded settings](assets/chromatic-orb-settings.png). View these images before designing macro UI; read the screenshot guidance in [ui-design.md](references/ui-design.md). Adapt the controls to the requested mechanic rather than copying spell-specific fields.
+
+
 **Compactness is the highest UI priority.** Put related controls and values on one row whenever they remain readable. Show each fact once. Move details that need not be permanently visible into hover tooltips; retain their accessible names/focus equivalents. Add no unnecessary labels, explanatory text, repeated headings, or status summaries. Before delivery, remove any row or text that can be merged, deduplicated, or moved into a tooltip. Apply this to cards, pickers, and settings alike; the example asset is not a reason to preserve redundant content.
 
 **Use the accepted Chromatic Orb design as the default for new macros.** Before creating or changing UI, read [references/ui-design.md](references/ui-design.md). It defines the shared layout, cursor, roll tooltips, artwork, and interaction conventions. Adapt the spell's theme and mechanics within that design; do not ask the user to repeat these preferences. A current request can override any default.

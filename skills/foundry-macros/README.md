@@ -17,3 +17,11 @@
 - [ZIP усієї навички](https://github.com/funteaqueue/funtomations/raw/refs/heads/main/skills/foundry-macros-community.zip)
 
 Якщо чат не може відкрити GitHub, прикріпіть файли з ZIP. Довідка описує модуль 0.8.4 / spellCards API 5; перевіряйте можливості фактично встановленої версії. Після генерації спочатку перевірте макрос на тестовому токені.
+
+## Приклад інтерфейсу
+
+Основна панель й другорядні налаштування за шестернею:
+
+![Основна панель](assets/chromatic-orb-panel.png)
+
+![Відкриті налаштування](assets/chromatic-orb-settings.png)

@@ -80,3 +80,32 @@ Copy relevant code into the new task, rename ids/locks/flags/effect names, and a
 ## Verification focus
 
 Inspect actual generated UI at narrow chat/panel widths, not a separate mock design. Check that native controls retain their handlers, current damage/targets do not aggregate old steps, tooltips preserve all dice and strikeouts, and cursor CSS wins over ordinary canvas hover styles and cleans up. Verify remembered choices independently between users. Preserve the dice-completion, resource, privacy, and fallback checks in the main skill.
+
+## Візуальний приклад: компактна панель Chromatic Orb
+
+Надані користувачем скриншоти показують бажаний вигляд інтерфейсу. Перед створенням панелі перегляньте обидва зображення; це візуальний орієнтир, а не вимога копіювати механіку Chromatic Orb.
+
+### Основна панель
+
+![Компактна панель Chromatic Orb: рівень і стихія, перемикачі, режим кидка та дії](../assets/chromatic-orb-panel.png)
+
+### Відкриті налаштування
+
+![Додаткова панель над основною: джерело заклять і перемикач анімації](../assets/chromatic-orb-settings.png)
+
+Що наслідувати:
+
+- Темне тло, тонкі нейтральні рамки, теплий золотистий акцент для вибраного стану; читабельний текст без зайвих декоративних пояснень.
+- Назва й короткий лічильник цілей зліва, компактні кнопки налаштувань і закриття справа.
+- Пов’язані поля в одному рядку; перемикачі поруч із короткими підписами, без окремої великої секції для кожного параметра.
+- Завада / нормальна / перевага як один сегментований рядок з однозначним вибраним станом.
+- Лише одна коротка актуальна підказка та один нижній рядок дій: скасувати, без цілі, лише картка в чат.
+- Другорядні налаштування приховані за шестернею. На прикладі вони відкриваються над основною панеллю, зберігаючи доступ до її дій. Біля краю екрана розташуйте їх там, де панель повністю поміщається у видимій області.
+- Зберігайте доступні назви кнопок-іконок, видимий клавіатурний фокус і достатній розмір натискання. Компактність не повинна обрізати текст або робити елементи незручними.
+
+Показуйте тільки доречні для конкретного макроса поля: стихія, чарунка та режими атаки не потрібні кожному макросу. Колір не має бути єдиною ознакою стану.
+
+Прямі зображення для перегляду з чату:
+
+- [Основна панель PNG](https://raw.githubusercontent.com/funteaqueue/funtomations/main/skills/foundry-macros/assets/chromatic-orb-panel.png)
+- [Відкриті налаштування PNG](https://raw.githubusercontent.com/funteaqueue/funtomations/main/skills/foundry-macros/assets/chromatic-orb-settings.png)
